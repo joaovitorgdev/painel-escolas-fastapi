@@ -9,6 +9,7 @@ from fastapi import Body, FastAPI, HTTPException, Request, Response
 from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel, ConfigDict, Field
 from starlette.concurrency import run_in_threadpool
 
 from servidor.armazenamento import COLECOES, Armazenamento, Conflito, CotaEsgotada
@@ -40,9 +41,25 @@ async def guarda(req: Request, chamar):
             tam = int(req.headers.get("content-length") or 0)
         except ValueError:
             return JSONResponse({"code": "tamanho_invalido"}, status_code=400)
+        # sem Content-Length (Transfer-Encoding: chunked) o teto acima não vale; o upload
+        # de arquivos confere o tamanho lendo o stream, o JSON exige o cabeçalho
+        if req.headers.get("transfer-encoding") and req.url.path != "/api/arquivos":
+            return JSONResponse({"code": "length_required"}, status_code=411)
         if tam > MAX_JSON and req.url.path != "/api/arquivos":
             return JSONResponse({"code": "too_large"}, status_code=413)
     return await chamar(req)
+
+
+class Escola(BaseModel):
+    """Campos validados; os demais (wifi, parque, sala...) passam como estão."""
+    model_config = ConfigDict(extra="allow")
+    nome: str = Field(min_length=2, max_length=200)
+    inep: str = Field(default="", pattern=r"^(\d{8}|—)?$", description="8 dígitos; vazio ou '—' quando não informado")
+    sre: int | None = Field(default=None, ge=0)
+    mun: str | None = Field(default=None, max_length=100)
+    alunos: int | None = Field(default=None, ge=0)
+    turmas: int | None = Field(default=None, ge=0)
+    rev: int = Field(default=0, ge=0, description="Revisão lida pelo cliente; diferente da atual → 409")
 
 
 def erro(status: int, code: str) -> HTTPException:
@@ -86,15 +103,15 @@ def uso() -> dict:
 
 # ---------- escolas ----------
 @app.post("/api/escolas", status_code=201)
-def criar_escola(dados: dict = Body()) -> dict:
-    return db.criar_escola(dados)
+def criar_escola(dados: Escola) -> dict:
+    return db.criar_escola(dados.model_dump(exclude_unset=True))
 
 
 @app.put("/api/escolas/{id_}")
-def atualizar_escola(id_: int, dados: dict = Body()) -> dict:
+def atualizar_escola(id_: int, dados: Escola) -> dict:
     """Envie o `rev` que você leu; se outra pessoa gravou antes, a resposta é 409."""
     try:
-        e = db.atualizar_escola(id_, dados)
+        e = db.atualizar_escola(id_, dados.model_dump(exclude_unset=True))
     except Conflito:
         raise erro(409, "conflito")
     if e is None:

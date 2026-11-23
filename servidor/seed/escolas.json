@@ -1,0 +1,5197 @@
+[
+ {
+  "id": 1,
+  "inep": "99416129",
+  "nome": "E.E. Ipê Amarelo",
+  "sre": 0,
+  "mun": "3156601",
+  "x": 942.66,
+  "y": 212.28,
+  "end": "Praça da Matriz, 1476",
+  "bairro": "Santa Rita",
+  "cep": "38928-429",
+  "tel": "(00) 3225-7359",
+  "email": "escola.99416129@example.org",
+  "alunos": 165,
+  "turmas": 6,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Ligga",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 300,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 38,
+   "rack": "Rack 24U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 26,
+   "estado": "Em uso",
+   "area": 57
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 4,
+   "cob": 85,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 33,
+   "pos81": 25,
+   "pos230": 1,
+   "daten": 14,
+   "pos06": 8,
+   "outros": 1
+  },
+  "proj": 7,
+  "lousas": 0,
+  "impr": 5
+ },
+ {
+  "id": 2,
+  "inep": "92871230",
+  "nome": "E.E. Doutor Geraldo Siqueira",
+  "sre": 0,
+  "mun": "3105202",
+  "x": 939.5,
+  "y": 149.88,
+  "end": "Praça da Matriz, 344",
+  "bairro": "São Cristóvão",
+  "cep": "36216-276",
+  "tel": "(00) 3947-9125",
+  "email": "escola.92871230@example.org",
+  "alunos": 858,
+  "turmas": 29,
+  "mods": [
+   "Ensino Médio"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 800,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 33,
+   "rack": "Sem rack",
+   "obra": "Prevista 2026"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 30,
+   "estado": "Desativada",
+   "area": 55
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 6,
+   "cob": 75,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 63,
+   "pos81": 12,
+   "pos230": 20,
+   "daten": 14,
+   "pos06": 2,
+   "outros": 4
+  },
+  "proj": 3,
+  "lousas": 1,
+  "impr": 5
+ },
+ {
+  "id": 3,
+  "inep": "94418934",
+  "nome": "E.E. Professora Rosana Brandão",
+  "sre": 1,
+  "mun": "3141405",
+  "x": 854.63,
+  "y": 184.34,
+  "end": "Rua do Comércio, 1049",
+  "bairro": "Centro",
+  "cep": "34889-861",
+  "tel": "(00) 3654-8317",
+  "email": "escola.94418934@example.org",
+  "alunos": 796,
+  "turmas": 27,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Algar Telecom",
+   "tipo": "Rádio",
+   "links": 1,
+   "vel": 600,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 27,
+   "rack": "Rack 24U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 24,
+   "estado": "Parcialmente em uso",
+   "area": 50
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 4,
+   "cob": 60,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 72,
+   "pos81": 2,
+   "pos230": 2,
+   "daten": 15,
+   "pos06": 1,
+   "outros": 8
+  },
+  "proj": 3,
+  "lousas": 1,
+  "impr": 4
+ },
+ {
+  "id": 4,
+  "inep": "98683481",
+  "nome": "E.E. Iracema Nogueira",
+  "sre": 1,
+  "mun": "3120300",
+  "x": 745.97,
+  "y": 239.19,
+  "end": "Rua Sete de Setembro, 257",
+  "bairro": "Jardim América",
+  "cep": "33681-065",
+  "tel": "(00) 3346-0344",
+  "email": "escola.98683481@example.org",
+  "alunos": 738,
+  "turmas": 25,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio",
+   "EJA"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "TIM",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 50,
+   "prog": "Contrato estadual",
+   "pontos": 33,
+   "rack": "Rack 24U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 21,
+   "estado": "Em uso",
+   "area": 67
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 18,
+   "cob": 75,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 62,
+   "pos81": 6,
+   "pos230": 17,
+   "daten": 4,
+   "pos06": 11,
+   "outros": 9
+  },
+  "proj": 10,
+  "lousas": 3,
+  "impr": 2
+ },
+ {
+  "id": 5,
+  "inep": "91016911",
+  "nome": "E.E. Raimundo Nogueira",
+  "sre": 2,
+  "mun": "3166204",
+  "x": 661.55,
+  "y": 640.03,
+  "end": "Avenida dos Ipês, 1501",
+  "bairro": "Vila Nova",
+  "cep": "31790-254",
+  "tel": "(00) 3196-3116",
+  "email": "escola.91016911@example.org",
+  "alunos": 210,
+  "turmas": 7,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Ligga",
+   "tipo": "Rádio",
+   "links": 1,
+   "vel": 100,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 95,
+   "rack": "Rack 24U",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 13,
+   "estado": "Desativada",
+   "area": 69
+  },
+  "wifi": {
+   "possui": false,
+   "aps": 0,
+   "cob": 0,
+   "ctrl": "—",
+   "ssid": "—"
+  },
+  "parque": {
+   "chromebooks": 1,
+   "pos81": 2,
+   "pos230": 7,
+   "daten": 5,
+   "pos06": 6,
+   "outros": 7
+  },
+  "proj": 8,
+  "lousas": 1,
+  "impr": 4
+ },
+ {
+  "id": 6,
+  "inep": "92597059",
+  "nome": "E.E. Rosana Duarte",
+  "sre": 2,
+  "mun": "3157302",
+  "x": 676.28,
+  "y": 660.1,
+  "end": "Praça da Matriz, 617",
+  "bairro": "Jardim América",
+  "cep": "30958-593",
+  "tel": "(00) 3753-8883",
+  "email": "escola.92597059@example.org",
+  "alunos": 966,
+  "turmas": 32,
+  "mods": [
+   "Ensino Médio"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "TIM",
+   "tipo": "Satélite",
+   "links": 2,
+   "vel": 1500,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 45,
+   "rack": "Rack 24U",
+   "obra": "Prevista 2026"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 27,
+   "estado": "Em uso",
+   "area": 46
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 19,
+   "cob": 60,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 8,
+   "pos81": 21,
+   "pos230": 7,
+   "daten": 12,
+   "pos06": 1,
+   "outros": 9
+  },
+  "proj": 4,
+  "lousas": 4,
+  "impr": 5
+ },
+ {
+  "id": 7,
+  "inep": "96640184",
+  "nome": "E.E. Três Rios",
+  "sre": 3,
+  "mun": "3107109",
+  "x": 485.36,
+  "y": 643.99,
+  "end": "Rua do Comércio, 1385",
+  "bairro": "Santa Rita",
+  "cep": "34915-468",
+  "tel": "(00) 3323-1188",
+  "email": "escola.96640184@example.org",
+  "alunos": 634,
+  "turmas": 21,
+  "mods": [
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "TIM",
+   "tipo": "Rádio",
+   "links": 1,
+   "vel": 1500,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 41,
+   "rack": "Rack 12U",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 17,
+   "estado": "Em uso",
+   "area": 58
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 12,
+   "cob": 85,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 56,
+   "pos81": 17,
+   "pos230": 9,
+   "daten": 0,
+   "pos06": 10,
+   "outros": 8
+  },
+  "proj": 5,
+  "lousas": 5,
+  "impr": 1
+ },
+ {
+  "id": 8,
+  "inep": "90059486",
+  "nome": "E.E. Iracema Paixão",
+  "sre": 3,
+  "mun": "3150505",
+  "x": 465.27,
+  "y": 584.58,
+  "end": "Travessa Primavera, 1589",
+  "bairro": "Jardim América",
+  "cep": "34291-165",
+  "tel": "(00) 3759-7239",
+  "email": "escola.90059486@example.org",
+  "alunos": 204,
+  "turmas": 7,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Vivo",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 50,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 99,
+   "rack": "Sem rack",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 18,
+   "estado": "Em uso",
+   "area": 37
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 5,
+   "cob": 85,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 5,
+   "pos81": 11,
+   "pos230": 6,
+   "daten": 7,
+   "pos06": 10,
+   "outros": 1
+  },
+  "proj": 6,
+  "lousas": 6,
+  "impr": 5
+ },
+ {
+  "id": 9,
+  "inep": "93348276",
+  "nome": "E.E. Dona Cecília Lacerda",
+  "sre": 4,
+  "mun": "3169208",
+  "x": 810.43,
+  "y": 623.82,
+  "end": "Rua Sete de Setembro, 726",
+  "bairro": "Vila Nova",
+  "cep": "33728-228",
+  "tel": "(00) 3024-3164",
+  "email": "escola.93348276@example.org",
+  "alunos": 321,
+  "turmas": 11,
+  "mods": [
+   "Ensino Médio",
+   "EJA"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Starlink",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 1500,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 111,
+   "rack": "Rack 12U",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 25,
+   "estado": "Em uso",
+   "area": 51
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 11,
+   "cob": 75,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 33,
+   "pos81": 1,
+   "pos230": 3,
+   "daten": 13,
+   "pos06": 5,
+   "outros": 5
+  },
+  "proj": 7,
+  "lousas": 4,
+  "impr": 5
+ },
+ {
+  "id": 10,
+  "inep": "96110622",
+  "nome": "E.E. Bela Vista",
+  "sre": 4,
+  "mun": "3166303",
+  "x": 766.57,
+  "y": 590.38,
+  "end": "Avenida dos Ipês, 153",
+  "bairro": "Santa Rita",
+  "cep": "35409-638",
+  "tel": "(00) 3321-2041",
+  "email": "escola.96110622@example.org",
+  "alunos": 1202,
+  "turmas": 40,
+  "mods": [
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Ligga",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 400,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 41,
+   "rack": "Sem rack",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 16,
+   "estado": "Desativada",
+   "area": 59
+  },
+  "wifi": {
+   "possui": false,
+   "aps": 0,
+   "cob": 0,
+   "ctrl": "—",
+   "ssid": "—"
+  },
+  "parque": {
+   "chromebooks": 22,
+   "pos81": 19,
+   "pos230": 18,
+   "daten": 9,
+   "pos06": 6,
+   "outros": 8
+  },
+  "proj": 1,
+  "lousas": 2,
+  "impr": 3
+ },
+ {
+  "id": 11,
+  "inep": "91422633",
+  "nome": "E.E. Dona Clarice Prates",
+  "sre": 5,
+  "mun": "3122504",
+  "x": 800.39,
+  "y": 487.17,
+  "end": "Rua São José, 1065",
+  "bairro": "Santa Rita",
+  "cep": "35491-095",
+  "tel": "(00) 3838-3848",
+  "email": "escola.91422633@example.org",
+  "alunos": 1146,
+  "turmas": 38,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "TIM",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 1000,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 34,
+   "rack": "Rack 44U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 15,
+   "estado": "Desativada",
+   "area": 71
+  },
+  "wifi": {
+   "possui": false,
+   "aps": 0,
+   "cob": 0,
+   "ctrl": "—",
+   "ssid": "—"
+  },
+  "parque": {
+   "chromebooks": 24,
+   "pos81": 22,
+   "pos230": 12,
+   "daten": 15,
+   "pos06": 6,
+   "outros": 3
+  },
+  "proj": 3,
+  "lousas": 5,
+  "impr": 1
+ },
+ {
+  "id": 12,
+  "inep": "98468772",
+  "nome": "E.E. Severino Lacerda",
+  "sre": 5,
+  "mun": "3150158",
+  "x": 804.04,
+  "y": 525.36,
+  "end": "Avenida dos Ipês, 1711",
+  "bairro": "Bom Jesus",
+  "cep": "37305-918",
+  "tel": "(00) 3162-7777",
+  "email": "escola.98468772@example.org",
+  "alunos": 1187,
+  "turmas": 40,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Starlink",
+   "tipo": "Rádio",
+   "links": 2,
+   "vel": 300,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 81,
+   "rack": "Rack 24U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 18,
+   "cob": 75,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 42,
+   "pos81": 10,
+   "pos230": 17,
+   "daten": 2,
+   "pos06": 2,
+   "outros": 2
+  },
+  "proj": 4,
+  "lousas": 3,
+  "impr": 2
+ },
+ {
+  "id": 13,
+  "inep": "99658481",
+  "nome": "E.E. Sol Nascente",
+  "sre": 6,
+  "mun": "3164902",
+  "x": 536.61,
+  "y": 751.46,
+  "end": "Avenida dos Ipês, 986",
+  "bairro": "Centro",
+  "cep": "35763-305",
+  "tel": "(00) 3771-6389",
+  "email": "escola.99658481@example.org",
+  "alunos": 227,
+  "turmas": 8,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "EJA"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 1000,
+   "prog": "Contrato estadual",
+   "pontos": 74,
+   "rack": "Rack 12U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 28,
+   "estado": "Desativada",
+   "area": 45
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 4,
+   "cob": 100,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 79,
+   "pos81": 17,
+   "pos230": 0,
+   "daten": 12,
+   "pos06": 9,
+   "outros": 9
+  },
+  "proj": 11,
+  "lousas": 0,
+  "impr": 1
+ },
+ {
+  "id": 14,
+  "inep": "97072684",
+  "nome": "E.E. Lívia Bittencourt",
+  "sre": 6,
+  "mun": "3114808",
+  "x": 578.51,
+  "y": 732.23,
+  "end": "Rua São José, 1719",
+  "bairro": "Centro",
+  "cep": "37705-019",
+  "tel": "(00) 3767-8837",
+  "email": "escola.97072684@example.org",
+  "alunos": 533,
+  "turmas": 18,
+  "mods": [
+   "Ensino Médio"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Vivo",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 50,
+   "prog": "Contrato estadual",
+   "pontos": 56,
+   "rack": "Sem rack",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 22,
+   "estado": "Desativada",
+   "area": 44
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 12,
+   "cob": 75,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 60,
+   "pos81": 21,
+   "pos230": 3,
+   "daten": 6,
+   "pos06": 7,
+   "outros": 4
+  },
+  "proj": 6,
+  "lousas": 1,
+  "impr": 5
+ },
+ {
+  "id": 15,
+  "inep": "94074336",
+  "nome": "E.E. Helena Quintela",
+  "sre": 7,
+  "mun": "3115409",
+  "x": 675.17,
+  "y": 612.04,
+  "end": "Avenida Central, 1437",
+  "bairro": "Vila Nova",
+  "cep": "39837-824",
+  "tel": "(00) 3123-9272",
+  "email": "escola.94074336@example.org",
+  "alunos": 868,
+  "turmas": 29,
+  "mods": [
+   "Ensino Médio"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Vivo",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 1500,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 68,
+   "rack": "Rack 24U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 12,
+   "estado": "Parcialmente em uso",
+   "area": 41
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 22,
+   "cob": 100,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 58,
+   "pos81": 22,
+   "pos230": 4,
+   "daten": 13,
+   "pos06": 2,
+   "outros": 8
+  },
+  "proj": 11,
+  "lousas": 2,
+  "impr": 5
+ },
+ {
+  "id": 16,
+  "inep": "97563202",
+  "nome": "E.E. Dona Teodoro Prates",
+  "sre": 7,
+  "mun": "3118304",
+  "x": 645.66,
+  "y": 612.26,
+  "end": "Praça da Matriz, 1546",
+  "bairro": "São Cristóvão",
+  "cep": "39336-624",
+  "tel": "(00) 3684-6209",
+  "email": "escola.97563202@example.org",
+  "alunos": 649,
+  "turmas": 22,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Rádio",
+   "links": 1,
+   "vel": 600,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 68,
+   "rack": "Rack 12U",
+   "obra": "Prevista 2026"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 12,
+   "estado": "Desativada",
+   "area": 52
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 12,
+   "cob": 60,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 24,
+   "pos81": 2,
+   "pos230": 7,
+   "daten": 13,
+   "pos06": 7,
+   "outros": 8
+  },
+  "proj": 4,
+  "lousas": 5,
+  "impr": 4
+ },
+ {
+  "id": 17,
+  "inep": "99233986",
+  "nome": "E.E. Benedito Lacerda",
+  "sre": 8,
+  "mun": "3158953",
+  "x": 757.67,
+  "y": 481.3,
+  "end": "Travessa Primavera, 730",
+  "bairro": "Santa Rita",
+  "cep": "37434-277",
+  "tel": "(00) 3313-4118",
+  "email": "escola.99233986@example.org",
+  "alunos": 1291,
+  "turmas": 43,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Ligga",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 1500,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 48,
+   "rack": "Sem rack",
+   "obra": "Concluída 2024"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 21,
+   "estado": "Desativada",
+   "area": 65
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 17,
+   "cob": 85,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 75,
+   "pos81": 24,
+   "pos230": 16,
+   "daten": 9,
+   "pos06": 1,
+   "outros": 3
+  },
+  "proj": 5,
+  "lousas": 1,
+  "impr": 3
+ },
+ {
+  "id": 18,
+  "inep": "98235577",
+  "nome": "E.E. Vale Verde",
+  "sre": 8,
+  "mun": "3150539",
+  "x": 772.78,
+  "y": 516.74,
+  "end": "Avenida Central, 1797",
+  "bairro": "Centro",
+  "cep": "39405-291",
+  "tel": "(00) 3480-7843",
+  "email": "escola.98235577@example.org",
+  "alunos": 193,
+  "turmas": 6,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Ligga",
+   "tipo": "Rádio",
+   "links": 1,
+   "vel": 100,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 87,
+   "rack": "Rack 24U",
+   "obra": "Prevista 2026"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 8,
+   "cob": 60,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 19,
+   "pos81": 25,
+   "pos230": 18,
+   "daten": 9,
+   "pos06": 1,
+   "outros": 3
+  },
+  "proj": 2,
+  "lousas": 4,
+  "impr": 4
+ },
+ {
+  "id": 19,
+  "inep": "93486102",
+  "nome": "E.E. Professora Lívia Prates",
+  "sre": 9,
+  "mun": "3169356",
+  "x": 524.88,
+  "y": 389.5,
+  "end": "Praça da Matriz, 551",
+  "bairro": "Santa Rita",
+  "cep": "31330-160",
+  "tel": "(00) 3245-2847",
+  "email": "escola.93486102@example.org",
+  "alunos": 978,
+  "turmas": 33,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais",
+   "EJA"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Satélite",
+   "links": 2,
+   "vel": 400,
+   "prog": "Contrato estadual",
+   "pontos": 54,
+   "rack": "Rack 12U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 29,
+   "estado": "Desativada",
+   "area": 64
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 7,
+   "cob": 60,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 29,
+   "pos81": 8,
+   "pos230": 20,
+   "daten": 6,
+   "pos06": 6,
+   "outros": 1
+  },
+  "proj": 9,
+  "lousas": 1,
+  "impr": 2
+ },
+ {
+  "id": 20,
+  "inep": "95101803",
+  "nome": "E.E. Lúcia Rezende",
+  "sre": 9,
+  "mun": "3131109",
+  "x": 598.27,
+  "y": 419.96,
+  "end": "Avenida dos Ipês, 1940",
+  "bairro": "Vila Nova",
+  "cep": "38199-552",
+  "tel": "(00) 3505-7172",
+  "email": "escola.95101803@example.org",
+  "alunos": 1265,
+  "turmas": 42,
+  "mods": [
+   "EJA"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 400,
+   "prog": "Contrato estadual",
+   "pontos": 36,
+   "rack": "Sem rack",
+   "obra": "Prevista 2026"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 18,
+   "cob": 60,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 34,
+   "pos81": 18,
+   "pos230": 1,
+   "daten": 5,
+   "pos06": 7,
+   "outros": 8
+  },
+  "proj": 11,
+  "lousas": 3,
+  "impr": 3
+ },
+ {
+  "id": 21,
+  "inep": "94835492",
+  "nome": "E.E. Professora Lúcia Viana",
+  "sre": 10,
+  "mun": "3120102",
+  "x": 678.23,
+  "y": 354.43,
+  "end": "Avenida dos Ipês, 1676",
+  "bairro": "Bom Jesus",
+  "cep": "30601-465",
+  "tel": "(00) 3090-5153",
+  "email": "escola.94835492@example.org",
+  "alunos": 314,
+  "turmas": 10,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Médio"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Starlink",
+   "tipo": "Rádio",
+   "links": 1,
+   "vel": 1500,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 77,
+   "rack": "Rack 24U",
+   "obra": "Concluída 2024"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 19,
+   "cob": 85,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 63,
+   "pos81": 20,
+   "pos230": 14,
+   "daten": 1,
+   "pos06": 3,
+   "outros": 4
+  },
+  "proj": 9,
+  "lousas": 1,
+  "impr": 3
+ },
+ {
+  "id": 22,
+  "inep": "91903561",
+  "nome": "E.E. Doutor Teodoro Paixão",
+  "sre": 10,
+  "mun": "3167103",
+  "x": 694.79,
+  "y": 413.37,
+  "end": "Rua Sete de Setembro, 1949",
+  "bairro": "Centro",
+  "cep": "32522-510",
+  "tel": "(00) 3955-4781",
+  "email": "escola.91903561@example.org",
+  "alunos": 736,
+  "turmas": 25,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Rádio",
+   "links": 3,
+   "vel": 200,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 49,
+   "rack": "Sem rack",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 12,
+   "estado": "Parcialmente em uso",
+   "area": 61
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 11,
+   "cob": 85,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 34,
+   "pos81": 0,
+   "pos230": 9,
+   "daten": 9,
+   "pos06": 9,
+   "outros": 9
+  },
+  "proj": 11,
+  "lousas": 3,
+  "impr": 2
+ },
+ {
+  "id": 23,
+  "inep": "93918527",
+  "nome": "E.E. Professor Valdir Coimbra",
+  "sre": 11,
+  "mun": "3135308",
+  "x": 491.85,
+  "y": 553.71,
+  "end": "Avenida dos Ipês, 99",
+  "bairro": "Vila Nova",
+  "cep": "37749-722",
+  "tel": "(00) 3935-6246",
+  "email": "escola.93918527@example.org",
+  "alunos": 486,
+  "turmas": 16,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Rádio",
+   "links": 3,
+   "vel": 600,
+   "prog": "Contrato estadual",
+   "pontos": 81,
+   "rack": "Rack 24U",
+   "obra": "Prevista 2026"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 16,
+   "cob": 100,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 18,
+   "pos81": 13,
+   "pos230": 20,
+   "daten": 4,
+   "pos06": 1,
+   "outros": 7
+  },
+  "proj": 5,
+  "lousas": 2,
+  "impr": 5
+ },
+ {
+  "id": 24,
+  "inep": "99076742",
+  "nome": "E.E. Doutor Lúcia Arantes",
+  "sre": 11,
+  "mun": "3142403",
+  "x": 511.52,
+  "y": 535.02,
+  "end": "Rua das Flores, 1274",
+  "bairro": "Centro",
+  "cep": "33846-646",
+  "tel": "(00) 3700-4708",
+  "email": "escola.99076742@example.org",
+  "alunos": 878,
+  "turmas": 29,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "TIM",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 200,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 63,
+   "rack": "Rack 24U",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 19,
+   "cob": 85,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 37,
+   "pos81": 11,
+   "pos230": 11,
+   "daten": 13,
+   "pos06": 2,
+   "outros": 3
+  },
+  "proj": 9,
+  "lousas": 3,
+  "impr": 5
+ },
+ {
+  "id": 25,
+  "inep": "99170395",
+  "nome": "E.E. Dona Aurélio Viana",
+  "sre": 12,
+  "mun": "3126901",
+  "x": 818.72,
+  "y": 397.58,
+  "end": "Rua do Comércio, 161",
+  "bairro": "São Cristóvão",
+  "cep": "35661-601",
+  "tel": "(00) 3306-6951",
+  "email": "escola.99170395@example.org",
+  "alunos": 622,
+  "turmas": 21,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Rádio",
+   "links": 1,
+   "vel": 300,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 98,
+   "rack": "Rack 12U",
+   "obra": "Prevista 2026"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 24,
+   "estado": "Parcialmente em uso",
+   "area": 53
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 13,
+   "cob": 60,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 50,
+   "pos81": 8,
+   "pos230": 0,
+   "daten": 1,
+   "pos06": 9,
+   "outros": 7
+  },
+  "proj": 5,
+  "lousas": 6,
+  "impr": 2
+ },
+ {
+  "id": 26,
+  "inep": "90661401",
+  "nome": "E.E. Professor Aurélio Siqueira",
+  "sre": 12,
+  "mun": "3125804",
+  "x": 801.13,
+  "y": 462.01,
+  "end": "Rua São José, 1625",
+  "bairro": "São Cristóvão",
+  "cep": "30546-593",
+  "tel": "(00) 3373-2153",
+  "email": "escola.90661401@example.org",
+  "alunos": 380,
+  "turmas": 13,
+  "mods": [
+   "Ensino Médio"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Vivo",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 300,
+   "prog": "Contrato estadual",
+   "pontos": 94,
+   "rack": "Rack 12U",
+   "obra": "Prevista 2026"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 30,
+   "estado": "Desativada",
+   "area": 52
+  },
+  "wifi": {
+   "possui": false,
+   "aps": 0,
+   "cob": 0,
+   "ctrl": "—",
+   "ssid": "—"
+  },
+  "parque": {
+   "chromebooks": 21,
+   "pos81": 8,
+   "pos230": 15,
+   "daten": 9,
+   "pos06": 11,
+   "outros": 5
+  },
+  "proj": 2,
+  "lousas": 3,
+  "impr": 1
+ },
+ {
+  "id": 27,
+  "inep": "96392547",
+  "nome": "E.E. Doutor Rosana Brandão",
+  "sre": 13,
+  "mun": "3116803",
+  "x": 725.69,
+  "y": 374.55,
+  "end": "Travessa Primavera, 231",
+  "bairro": "Santa Rita",
+  "cep": "33830-482",
+  "tel": "(00) 3025-9198",
+  "email": "escola.96392547@example.org",
+  "alunos": 641,
+  "turmas": 21,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "EJA"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Vivo",
+   "tipo": "Rádio",
+   "links": 3,
+   "vel": 400,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 77,
+   "rack": "Rack 24U",
+   "obra": "Concluída 2024"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 18,
+   "estado": "Em uso",
+   "area": 37
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 22,
+   "cob": 85,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 14,
+   "pos81": 3,
+   "pos230": 7,
+   "daten": 4,
+   "pos06": 6,
+   "outros": 7
+  },
+  "proj": 6,
+  "lousas": 5,
+  "impr": 5
+ },
+ {
+  "id": 28,
+  "inep": "93645180",
+  "nome": "E.E. Doutor Cecília Nogueira",
+  "sre": 13,
+  "mun": "3171808",
+  "x": 753.24,
+  "y": 439.98,
+  "end": "Rua Sete de Setembro, 920",
+  "bairro": "Jardim América",
+  "cep": "35942-101",
+  "tel": "(00) 3702-6018",
+  "email": "escola.93645180@example.org",
+  "alunos": 935,
+  "turmas": 31,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 100,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 52,
+   "rack": "Rack 24U",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 15,
+   "cob": 85,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 16,
+   "pos81": 25,
+   "pos230": 18,
+   "daten": 6,
+   "pos06": 1,
+   "outros": 8
+  },
+  "proj": 4,
+  "lousas": 4,
+  "impr": 2
+ },
+ {
+  "id": 29,
+  "inep": "97990081",
+  "nome": "E.E. Dona Helena Fontoura",
+  "sre": 14,
+  "mun": "3140407",
+  "x": 522.57,
+  "y": 771.93,
+  "end": "Rua Sete de Setembro, 1603",
+  "bairro": "Vila Nova",
+  "cep": "38408-607",
+  "tel": "(00) 3111-7405",
+  "email": "escola.97990081@example.org",
+  "alunos": 207,
+  "turmas": 7,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 1000,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 79,
+   "rack": "Rack 24U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 13,
+   "estado": "Desativada",
+   "area": 63
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 6,
+   "cob": 60,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 41,
+   "pos81": 19,
+   "pos230": 4,
+   "daten": 2,
+   "pos06": 2,
+   "outros": 4
+  },
+  "proj": 10,
+  "lousas": 5,
+  "impr": 5
+ },
+ {
+  "id": 30,
+  "inep": "93607488",
+  "nome": "E.E. Professor Rosana Quintela",
+  "sre": 14,
+  "mun": "3132404",
+  "x": 503.79,
+  "y": 774.98,
+  "end": "Avenida dos Ipês, 934",
+  "bairro": "Jardim América",
+  "cep": "36779-347",
+  "tel": "(00) 3847-7430",
+  "email": "escola.93607488@example.org",
+  "alunos": 303,
+  "turmas": 10,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 400,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 44,
+   "rack": "Rack 44U",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 30,
+   "estado": "Em uso",
+   "area": 40
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 21,
+   "cob": 60,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 12,
+   "pos81": 23,
+   "pos230": 11,
+   "daten": 4,
+   "pos06": 8,
+   "outros": 0
+  },
+  "proj": 10,
+  "lousas": 4,
+  "impr": 5
+ },
+ {
+  "id": 31,
+  "inep": "99332586",
+  "nome": "E.E. Doutor Severino Rezende",
+  "sre": 15,
+  "mun": "3131406",
+  "x": 95.37,
+  "y": 423.23,
+  "end": "Travessa Primavera, 245",
+  "bairro": "Vila Nova",
+  "cep": "39406-231",
+  "tel": "(00) 3826-7030",
+  "email": "escola.99332586@example.org",
+  "alunos": 535,
+  "turmas": 18,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Médio",
+   "EJA"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "TIM",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 400,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 69,
+   "rack": "Rack 24U",
+   "obra": "Concluída 2024"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 13,
+   "estado": "Em uso",
+   "area": 71
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 15,
+   "cob": 100,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 18,
+   "pos81": 23,
+   "pos230": 20,
+   "daten": 0,
+   "pos06": 1,
+   "outros": 8
+  },
+  "proj": 4,
+  "lousas": 3,
+  "impr": 4
+ },
+ {
+  "id": 32,
+  "inep": "96948850",
+  "nome": "E.E. Geraldo Quintela",
+  "sre": 15,
+  "mun": "3111804",
+  "x": 165.25,
+  "y": 432.8,
+  "end": "Rua São José, 451",
+  "bairro": "Bom Jesus",
+  "cep": "31864-353",
+  "tel": "(00) 3440-1816",
+  "email": "escola.96948850@example.org",
+  "alunos": 657,
+  "turmas": 22,
+  "mods": [
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "TIM",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 50,
+   "prog": "Contrato estadual",
+   "pontos": 51,
+   "rack": "Rack 12U",
+   "obra": "Concluída 2024"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 29,
+   "estado": "Em uso",
+   "area": 51
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 18,
+   "cob": 85,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 15,
+   "pos81": 0,
+   "pos230": 15,
+   "daten": 13,
+   "pos06": 2,
+   "outros": 2
+  },
+  "proj": 7,
+  "lousas": 4,
+  "impr": 2
+ },
+ {
+  "id": 33,
+  "inep": "96795314",
+  "nome": "E.E. Professor Lúcia Coimbra",
+  "sre": 16,
+  "mun": "3145059",
+  "x": 697.27,
+  "y": 141.82,
+  "end": "Rua das Flores, 1988",
+  "bairro": "Vila Nova",
+  "cep": "32815-820",
+  "tel": "(00) 3970-7538",
+  "email": "escola.96795314@example.org",
+  "alunos": 1274,
+  "turmas": 42,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 800,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 35,
+   "rack": "Rack 44U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 19,
+   "estado": "Desativada",
+   "area": 56
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 7,
+   "cob": 75,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 21,
+   "pos81": 2,
+   "pos230": 16,
+   "daten": 3,
+   "pos06": 8,
+   "outros": 8
+  },
+  "proj": 4,
+  "lousas": 6,
+  "impr": 3
+ },
+ {
+  "id": 34,
+  "inep": "92972018",
+  "nome": "E.E. Doutor Cecília Lacerda",
+  "sre": 16,
+  "mun": "3146552",
+  "x": 693.26,
+  "y": 93.03,
+  "end": "Rua Sete de Setembro, 960",
+  "bairro": "Bom Jesus",
+  "cep": "39494-459",
+  "tel": "(00) 3697-9248",
+  "email": "escola.92972018@example.org",
+  "alunos": 455,
+  "turmas": 15,
+  "mods": [
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Rádio",
+   "links": 1,
+   "vel": 1000,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 105,
+   "rack": "Rack 12U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 30,
+   "estado": "Desativada",
+   "area": 38
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 6,
+   "cob": 85,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 9,
+   "pos81": 9,
+   "pos230": 14,
+   "daten": 14,
+   "pos06": 0,
+   "outros": 0
+  },
+  "proj": 6,
+  "lousas": 6,
+  "impr": 3
+ },
+ {
+  "id": 35,
+  "inep": "95394323",
+  "nome": "E.E. Augusta Coimbra",
+  "sre": 17,
+  "mun": "3108255",
+  "x": 541.04,
+  "y": 75.08,
+  "end": "Rua Sete de Setembro, 1036",
+  "bairro": "Jardim América",
+  "cep": "31013-461",
+  "tel": "(00) 3105-5626",
+  "email": "escola.95394323@example.org",
+  "alunos": 184,
+  "turmas": 6,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais",
+   "EJA"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Vivo",
+   "tipo": "Rádio",
+   "links": 2,
+   "vel": 1500,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 103,
+   "rack": "Sem rack",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 30,
+   "estado": "Parcialmente em uso",
+   "area": 53
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 10,
+   "cob": 100,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 43,
+   "pos81": 21,
+   "pos230": 19,
+   "daten": 1,
+   "pos06": 12,
+   "outros": 10
+  },
+  "proj": 11,
+  "lousas": 2,
+  "impr": 1
+ },
+ {
+  "id": 36,
+  "inep": "92372774",
+  "nome": "E.E. Dona Rosana Quintela",
+  "sre": 17,
+  "mun": "3150570",
+  "x": 510.0,
+  "y": 186.37,
+  "end": "Travessa Primavera, 645",
+  "bairro": "Santa Rita",
+  "cep": "36421-132",
+  "tel": "(00) 3609-1388",
+  "email": "escola.92372774@example.org",
+  "alunos": 1334,
+  "turmas": 44,
+  "mods": [
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Starlink",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 1500,
+   "prog": "Contrato estadual",
+   "pontos": 107,
+   "rack": "Rack 44U",
+   "obra": "Prevista 2026"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 22,
+   "cob": 85,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 46,
+   "pos81": 9,
+   "pos230": 5,
+   "daten": 6,
+   "pos06": 5,
+   "outros": 7
+  },
+  "proj": 4,
+  "lousas": 1,
+  "impr": 2
+ },
+ {
+  "id": 37,
+  "inep": "97342941",
+  "nome": "E.E. Augusta Rezende",
+  "sre": 18,
+  "mun": "3115904",
+  "x": 701.66,
+  "y": 704.22,
+  "end": "Rua das Flores, 851",
+  "bairro": "Vila Nova",
+  "cep": "33891-992",
+  "tel": "(00) 3454-4668",
+  "email": "escola.97342941@example.org",
+  "alunos": 415,
+  "turmas": 14,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Ligga",
+   "tipo": "Rádio",
+   "links": 1,
+   "vel": 600,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 98,
+   "rack": "Rack 44U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 29,
+   "estado": "Parcialmente em uso",
+   "area": 59
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 9,
+   "cob": 100,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 25,
+   "pos81": 25,
+   "pos230": 19,
+   "daten": 4,
+   "pos06": 4,
+   "outros": 0
+  },
+  "proj": 11,
+  "lousas": 3,
+  "impr": 3
+ },
+ {
+  "id": 38,
+  "inep": "93725179",
+  "nome": "E.E. Augusta Paixão",
+  "sre": 18,
+  "mun": "3106903",
+  "x": 706.58,
+  "y": 710.33,
+  "end": "Rua Sete de Setembro, 1821",
+  "bairro": "Vila Nova",
+  "cep": "30436-424",
+  "tel": "(00) 3054-6495",
+  "email": "escola.93725179@example.org",
+  "alunos": 658,
+  "turmas": 22,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Ligga",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 600,
+   "prog": "Contrato estadual",
+   "pontos": 116,
+   "rack": "Rack 12U",
+   "obra": "Concluída 2024"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 23,
+   "estado": "Em uso",
+   "area": 37
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 6,
+   "cob": 85,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 17,
+   "pos81": 24,
+   "pos230": 15,
+   "daten": 14,
+   "pos06": 9,
+   "outros": 0
+  },
+  "proj": 2,
+  "lousas": 0,
+  "impr": 3
+ },
+ {
+  "id": 39,
+  "inep": "94059048",
+  "nome": "E.E. Doutor Augusta Nogueira",
+  "sre": 19,
+  "mun": "3128501",
+  "x": 717.14,
+  "y": 704.94,
+  "end": "Rua do Comércio, 606",
+  "bairro": "São Cristóvão",
+  "cep": "30025-629",
+  "tel": "(00) 3361-3941",
+  "email": "escola.94059048@example.org",
+  "alunos": 1123,
+  "turmas": 37,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Algar Telecom",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 1500,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 89,
+   "rack": "Rack 24U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 26,
+   "estado": "Parcialmente em uso",
+   "area": 37
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 22,
+   "cob": 100,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 32,
+   "pos81": 23,
+   "pos230": 0,
+   "daten": 11,
+   "pos06": 12,
+   "outros": 1
+  },
+  "proj": 6,
+  "lousas": 1,
+  "impr": 1
+ },
+ {
+  "id": 40,
+  "inep": "90620485",
+  "nome": "E.E. Doutor Clarice Valadão",
+  "sre": 19,
+  "mun": "3122900",
+  "x": 738.54,
+  "y": 667.88,
+  "end": "Rua São José, 422",
+  "bairro": "Centro",
+  "cep": "33268-907",
+  "tel": "(00) 3042-5170",
+  "email": "escola.90620485@example.org",
+  "alunos": 1080,
+  "turmas": 36,
+  "mods": [
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Ligga",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 300,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 70,
+   "rack": "Rack 24U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 12,
+   "estado": "Parcialmente em uso",
+   "area": 42
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 18,
+   "cob": 85,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 51,
+   "pos81": 23,
+   "pos230": 14,
+   "daten": 12,
+   "pos06": 5,
+   "outros": 2
+  },
+  "proj": 8,
+  "lousas": 5,
+  "impr": 4
+ },
+ {
+  "id": 41,
+  "inep": "95914963",
+  "nome": "E.E. Severino Moura",
+  "sre": 20,
+  "mun": "3154150",
+  "x": 811.39,
+  "y": 564.79,
+  "end": "Avenida dos Ipês, 572",
+  "bairro": "Santa Rita",
+  "cep": "30939-076",
+  "tel": "(00) 3687-6655",
+  "email": "escola.95914963@example.org",
+  "alunos": 972,
+  "turmas": 32,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "EJA"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Satélite",
+   "links": 3,
+   "vel": 1000,
+   "prog": "Contrato estadual",
+   "pontos": 41,
+   "rack": "Rack 24U",
+   "obra": "Concluída 2024"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 24,
+   "estado": "Desativada",
+   "area": 58
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 5,
+   "cob": 85,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 72,
+   "pos81": 1,
+   "pos230": 19,
+   "daten": 4,
+   "pos06": 10,
+   "outros": 7
+  },
+  "proj": 6,
+  "lousas": 2,
+  "impr": 4
+ },
+ {
+  "id": 42,
+  "inep": "98372568",
+  "nome": "E.E. Dona Cecília Brandão",
+  "sre": 20,
+  "mun": "3163607",
+  "x": 828.48,
+  "y": 547.07,
+  "end": "Avenida dos Ipês, 1880",
+  "bairro": "Bom Jesus",
+  "cep": "31929-268",
+  "tel": "(00) 3793-4264",
+  "email": "escola.98372568@example.org",
+  "alunos": 611,
+  "turmas": 20,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Vivo",
+   "tipo": "Rádio",
+   "links": 1,
+   "vel": 100,
+   "prog": "Contrato estadual",
+   "pontos": 34,
+   "rack": "Rack 44U",
+   "obra": "Concluída 2024"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 9,
+   "cob": 100,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 40,
+   "pos81": 21,
+   "pos230": 11,
+   "daten": 2,
+   "pos06": 8,
+   "outros": 8
+  },
+  "proj": 5,
+  "lousas": 2,
+  "impr": 2
+ },
+ {
+  "id": 43,
+  "inep": "96891998",
+  "nome": "E.E. Doutor Joaquim Brandão",
+  "sre": 21,
+  "mun": "3162955",
+  "x": 633.63,
+  "y": 515.3,
+  "end": "Avenida dos Ipês, 1696",
+  "bairro": "Bom Jesus",
+  "cep": "31208-128",
+  "tel": "(00) 3995-5194",
+  "email": "escola.96891998@example.org",
+  "alunos": 276,
+  "turmas": 9,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Rádio",
+   "links": 3,
+   "vel": 200,
+   "prog": "Contrato estadual",
+   "pontos": 80,
+   "rack": "Rack 24U",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 25,
+   "estado": "Desativada",
+   "area": 44
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 20,
+   "cob": 85,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 20,
+   "pos81": 10,
+   "pos230": 7,
+   "daten": 11,
+   "pos06": 8,
+   "outros": 4
+  },
+  "proj": 2,
+  "lousas": 2,
+  "impr": 2
+ },
+ {
+  "id": 44,
+  "inep": "92872269",
+  "nome": "E.E. Dona Iracema Valadão",
+  "sre": 21,
+  "mun": "3171204",
+  "x": 635.81,
+  "y": 519.44,
+  "end": "Travessa Primavera, 1735",
+  "bairro": "Bom Jesus",
+  "cep": "30674-845",
+  "tel": "(00) 3884-0464",
+  "email": "escola.92872269@example.org",
+  "alunos": 291,
+  "turmas": 10,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Vivo",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 800,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 106,
+   "rack": "Rack 24U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 28,
+   "estado": "Desativada",
+   "area": 69
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 8,
+   "cob": 85,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 38,
+   "pos81": 15,
+   "pos230": 7,
+   "daten": 12,
+   "pos06": 4,
+   "outros": 7
+  },
+  "proj": 2,
+  "lousas": 5,
+  "impr": 1
+ },
+ {
+  "id": 45,
+  "inep": "96216632",
+  "nome": "E.E. Professora Marta Arantes",
+  "sre": 22,
+  "mun": "3124104",
+  "x": 604.51,
+  "y": 514.48,
+  "end": "Avenida Central, 663",
+  "bairro": "Jardim América",
+  "cep": "37642-125",
+  "tel": "(00) 3273-7366",
+  "email": "escola.96216632@example.org",
+  "alunos": 753,
+  "turmas": 25,
+  "mods": [
+   "Ensino Fundamental – Anos Finais"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "TIM",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 800,
+   "prog": "Contrato estadual",
+   "pontos": 45,
+   "rack": "Rack 12U",
+   "obra": "Prevista 2026"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 22,
+   "estado": "Desativada",
+   "area": 55
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 8,
+   "cob": 75,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 63,
+   "pos81": 16,
+   "pos230": 14,
+   "daten": 15,
+   "pos06": 4,
+   "outros": 7
+  },
+  "proj": 1,
+  "lousas": 0,
+  "impr": 4
+ },
+ {
+  "id": 46,
+  "inep": "92247055",
+  "nome": "E.E. Marta Brandão",
+  "sre": 22,
+  "mun": "3130101",
+  "x": 601.72,
+  "y": 553.0,
+  "end": "Rua São José, 1499",
+  "bairro": "Vila Nova",
+  "cep": "36606-374",
+  "tel": "(00) 3046-6563",
+  "email": "escola.92247055@example.org",
+  "alunos": 1063,
+  "turmas": 35,
+  "mods": [
+   "EJA"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Ligga",
+   "tipo": "Rádio",
+   "links": 2,
+   "vel": 100,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 89,
+   "rack": "Rack 44U",
+   "obra": "Prevista 2026"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 13,
+   "estado": "Parcialmente em uso",
+   "area": 74
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 17,
+   "cob": 60,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 12,
+   "pos81": 12,
+   "pos230": 11,
+   "daten": 10,
+   "pos06": 8,
+   "outros": 5
+  },
+  "proj": 3,
+  "lousas": 1,
+  "impr": 5
+ },
+ {
+  "id": 47,
+  "inep": "92726331",
+  "nome": "E.E. Otávio Valadão",
+  "sre": 23,
+  "mun": "3154804",
+  "x": 650.97,
+  "y": 546.27,
+  "end": "Avenida dos Ipês, 1272",
+  "bairro": "Santa Rita",
+  "cep": "34902-607",
+  "tel": "(00) 3344-8311",
+  "email": "escola.92726331@example.org",
+  "alunos": 1155,
+  "turmas": 38,
+  "mods": [
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 600,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 39,
+   "rack": "Rack 44U",
+   "obra": "Prevista 2026"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 20,
+   "estado": "Parcialmente em uso",
+   "area": 75
+  },
+  "wifi": {
+   "possui": false,
+   "aps": 0,
+   "cob": 0,
+   "ctrl": "—",
+   "ssid": "—"
+  },
+  "parque": {
+   "chromebooks": 3,
+   "pos81": 19,
+   "pos230": 15,
+   "daten": 8,
+   "pos06": 10,
+   "outros": 9
+  },
+  "proj": 10,
+  "lousas": 1,
+  "impr": 1
+ },
+ {
+  "id": 48,
+  "inep": "91044906",
+  "nome": "E.E. Dona Raimundo Siqueira",
+  "sre": 23,
+  "mun": "3154606",
+  "x": 615.32,
+  "y": 520.12,
+  "end": "Rua do Comércio, 1072",
+  "bairro": "Jardim América",
+  "cep": "39189-332",
+  "tel": "(00) 3678-7837",
+  "email": "escola.91044906@example.org",
+  "alunos": 410,
+  "turmas": 14,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Algar Telecom",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 600,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 117,
+   "rack": "Rack 12U",
+   "obra": "Prevista 2026"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 26,
+   "estado": "Parcialmente em uso",
+   "area": 47
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 19,
+   "cob": 75,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 71,
+   "pos81": 9,
+   "pos230": 7,
+   "daten": 9,
+   "pos06": 12,
+   "outros": 4
+  },
+  "proj": 12,
+  "lousas": 1,
+  "impr": 4
+ },
+ {
+  "id": 49,
+  "inep": "99429097",
+  "nome": "E.E. Doutor Iracema Quintela",
+  "sre": 24,
+  "mun": "3127909",
+  "x": 290.6,
+  "y": 400.0,
+  "end": "Rua São José, 291",
+  "bairro": "Centro",
+  "cep": "39614-245",
+  "tel": "(00) 3248-0831",
+  "email": "escola.99429097@example.org",
+  "alunos": 625,
+  "turmas": 21,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio",
+   "EJA"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "TIM",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 600,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 85,
+   "rack": "Rack 24U",
+   "obra": "Concluída 2024"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 27,
+   "estado": "Em uso",
+   "area": 70
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 12,
+   "cob": 75,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 60,
+   "pos81": 15,
+   "pos230": 20,
+   "daten": 6,
+   "pos06": 12,
+   "outros": 4
+  },
+  "proj": 6,
+  "lousas": 2,
+  "impr": 1
+ },
+ {
+  "id": 50,
+  "inep": "91800206",
+  "nome": "E.E. Aurélio Rezende",
+  "sre": 24,
+  "mun": "3143104",
+  "x": 312.94,
+  "y": 422.22,
+  "end": "Travessa Primavera, 592",
+  "bairro": "São Cristóvão",
+  "cep": "38901-536",
+  "tel": "(00) 3505-2198",
+  "email": "escola.91800206@example.org",
+  "alunos": 692,
+  "turmas": 23,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Ligga",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 1000,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 57,
+   "rack": "Sem rack",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 22,
+   "cob": 85,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 72,
+   "pos81": 21,
+   "pos230": 6,
+   "daten": 5,
+   "pos06": 9,
+   "outros": 10
+  },
+  "proj": 7,
+  "lousas": 6,
+  "impr": 4
+ },
+ {
+  "id": 51,
+  "inep": "91983483",
+  "nome": "E.E. Serra Azul",
+  "sre": 25,
+  "mun": "3162252",
+  "x": 593.17,
+  "y": 250.42,
+  "end": "Rua Sete de Setembro, 638",
+  "bairro": "Jardim América",
+  "cep": "36642-702",
+  "tel": "(00) 3514-5095",
+  "email": "escola.91983483@example.org",
+  "alunos": 1273,
+  "turmas": 42,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 200,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 120,
+   "rack": "Rack 12U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 17,
+   "estado": "Desativada",
+   "area": 70
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 5,
+   "cob": 100,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 27,
+   "pos81": 24,
+   "pos230": 7,
+   "daten": 2,
+   "pos06": 8,
+   "outros": 7
+  },
+  "proj": 9,
+  "lousas": 5,
+  "impr": 3
+ },
+ {
+  "id": 52,
+  "inep": "91950183",
+  "nome": "E.E. Boa Esperança",
+  "sre": 25,
+  "mun": "3135357",
+  "x": 602.01,
+  "y": 160.4,
+  "end": "Praça da Matriz, 1478",
+  "bairro": "Bom Jesus",
+  "cep": "38008-093",
+  "tel": "(00) 3920-8361",
+  "email": "escola.91950183@example.org",
+  "alunos": 1272,
+  "turmas": 42,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Algar Telecom",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 50,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 84,
+   "rack": "Rack 12U",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 26,
+   "estado": "Parcialmente em uso",
+   "area": 51
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 18,
+   "cob": 60,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 27,
+   "pos81": 18,
+   "pos230": 2,
+   "daten": 1,
+   "pos06": 6,
+   "outros": 5
+  },
+  "proj": 12,
+  "lousas": 0,
+  "impr": 5
+ },
+ {
+  "id": 53,
+  "inep": "96302286",
+  "nome": "E.E. Professora Otávio Quintela",
+  "sre": 26,
+  "mun": "3103108",
+  "x": 793.56,
+  "y": 642.68,
+  "end": "Avenida Central, 1408",
+  "bairro": "Santa Rita",
+  "cep": "38835-136",
+  "tel": "(00) 3669-5697",
+  "email": "escola.96302286@example.org",
+  "alunos": 960,
+  "turmas": 32,
+  "mods": [
+   "Ensino Fundamental – Anos Finais"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Algar Telecom",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 300,
+   "prog": "Contrato estadual",
+   "pontos": 27,
+   "rack": "Rack 12U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 24,
+   "estado": "Desativada",
+   "area": 69
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 16,
+   "cob": 100,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 48,
+   "pos81": 7,
+   "pos230": 7,
+   "daten": 14,
+   "pos06": 5,
+   "outros": 2
+  },
+  "proj": 5,
+  "lousas": 1,
+  "impr": 1
+ },
+ {
+  "id": 54,
+  "inep": "99055666",
+  "nome": "E.E. Aurélio Siqueira",
+  "sre": 26,
+  "mun": "3105509",
+  "x": 782.91,
+  "y": 665.72,
+  "end": "Praça da Matriz, 1554",
+  "bairro": "Centro",
+  "cep": "32295-515",
+  "tel": "(00) 3296-3836",
+  "email": "escola.99055666@example.org",
+  "alunos": 199,
+  "turmas": 7,
+  "mods": [
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 1500,
+   "prog": "Contrato estadual",
+   "pontos": 77,
+   "rack": "Rack 12U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 24,
+   "estado": "Em uso",
+   "area": 70
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 11,
+   "cob": 75,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 54,
+   "pos81": 17,
+   "pos230": 15,
+   "daten": 1,
+   "pos06": 5,
+   "outros": 10
+  },
+  "proj": 11,
+  "lousas": 3,
+  "impr": 5
+ },
+ {
+  "id": 55,
+  "inep": "97768273",
+  "nome": "E.E. Benedito Coimbra",
+  "sre": 27,
+  "mun": "3158003",
+  "x": 704.16,
+  "y": 491.0,
+  "end": "Rua das Flores, 1161",
+  "bairro": "São Cristóvão",
+  "cep": "36824-570",
+  "tel": "(00) 3542-2196",
+  "email": "escola.97768273@example.org",
+  "alunos": 593,
+  "turmas": 20,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Ligga",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 600,
+   "prog": "Contrato estadual",
+   "pontos": 93,
+   "rack": "Sem rack",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 8,
+   "cob": 85,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 77,
+   "pos81": 19,
+   "pos230": 1,
+   "daten": 2,
+   "pos06": 3,
+   "outros": 9
+  },
+  "proj": 12,
+  "lousas": 5,
+  "impr": 5
+ },
+ {
+  "id": 56,
+  "inep": "95395804",
+  "nome": "E.E. Clarice Quintela",
+  "sre": 27,
+  "mun": "3160504",
+  "x": 696.77,
+  "y": 468.41,
+  "end": "Rua São José, 789",
+  "bairro": "São Cristóvão",
+  "cep": "38743-664",
+  "tel": "(00) 3367-5053",
+  "email": "escola.95395804@example.org",
+  "alunos": 1337,
+  "turmas": 45,
+  "mods": [
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "TIM",
+   "tipo": "Rádio",
+   "links": 2,
+   "vel": 300,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 65,
+   "rack": "Rack 44U",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 17,
+   "estado": "Desativada",
+   "area": 49
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 21,
+   "cob": 75,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 33,
+   "pos81": 17,
+   "pos230": 18,
+   "daten": 13,
+   "pos06": 4,
+   "outros": 2
+  },
+  "proj": 4,
+  "lousas": 2,
+  "impr": 2
+ },
+ {
+  "id": 57,
+  "inep": "99095547",
+  "nome": "E.E. Professora Valdir Arantes",
+  "sre": 28,
+  "mun": "3142304",
+  "x": 628.82,
+  "y": 569.89,
+  "end": "Rua das Flores, 1083",
+  "bairro": "Centro",
+  "cep": "31217-967",
+  "tel": "(00) 3837-0794",
+  "email": "escola.99095547@example.org",
+  "alunos": 821,
+  "turmas": 27,
+  "mods": [
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Starlink",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 200,
+   "prog": "Contrato estadual",
+   "pontos": 52,
+   "rack": "Rack 44U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 25,
+   "estado": "Em uso",
+   "area": 74
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 9,
+   "cob": 100,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 62,
+   "pos81": 0,
+   "pos230": 0,
+   "daten": 13,
+   "pos06": 0,
+   "outros": 0
+  },
+  "proj": 9,
+  "lousas": 5,
+  "impr": 3
+ },
+ {
+  "id": 58,
+  "inep": "99479163",
+  "nome": "E.E. Professor Helena Nogueira",
+  "sre": 28,
+  "mun": "3145901",
+  "x": 658.18,
+  "y": 598.86,
+  "end": "Praça da Matriz, 1437",
+  "bairro": "Jardim América",
+  "cep": "34914-700",
+  "tel": "(00) 3847-1320",
+  "email": "escola.99479163@example.org",
+  "alunos": 647,
+  "turmas": 22,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais",
+   "EJA"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Rádio",
+   "links": 2,
+   "vel": 50,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 26,
+   "rack": "Sem rack",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 22,
+   "estado": "Parcialmente em uso",
+   "area": 62
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 18,
+   "cob": 85,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 12,
+   "pos81": 16,
+   "pos230": 1,
+   "daten": 7,
+   "pos06": 3,
+   "outros": 9
+  },
+  "proj": 8,
+  "lousas": 2,
+  "impr": 1
+ },
+ {
+  "id": 59,
+  "inep": "94034453",
+  "nome": "E.E. Dona Otávio Bittencourt",
+  "sre": 29,
+  "mun": "3126000",
+  "x": 598.7,
+  "y": 531.88,
+  "end": "Avenida dos Ipês, 1396",
+  "bairro": "Bom Jesus",
+  "cep": "35435-393",
+  "tel": "(00) 3773-2292",
+  "email": "escola.94034453@example.org",
+  "alunos": 915,
+  "turmas": 30,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Médio",
+   "EJA"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 600,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 103,
+   "rack": "Rack 44U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 22,
+   "cob": 60,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 34,
+   "pos81": 25,
+   "pos230": 14,
+   "daten": 15,
+   "pos06": 3,
+   "outros": 5
+  },
+  "proj": 9,
+  "lousas": 3,
+  "impr": 4
+ },
+ {
+  "id": 60,
+  "inep": "90087161",
+  "nome": "E.E. Iracema Valadão",
+  "sre": 29,
+  "mun": "3151404",
+  "x": 548.07,
+  "y": 512.54,
+  "end": "Rua São José, 920",
+  "bairro": "Vila Nova",
+  "cep": "34419-104",
+  "tel": "(00) 3135-1430",
+  "email": "escola.90087161@example.org",
+  "alunos": 415,
+  "turmas": 14,
+  "mods": [
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Algar Telecom",
+   "tipo": "Rádio",
+   "links": 3,
+   "vel": 800,
+   "prog": "Contrato estadual",
+   "pontos": 28,
+   "rack": "Rack 24U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 13,
+   "estado": "Desativada",
+   "area": 40
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 6,
+   "cob": 85,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 1,
+   "pos81": 9,
+   "pos230": 13,
+   "daten": 12,
+   "pos06": 12,
+   "outros": 1
+  },
+  "proj": 12,
+  "lousas": 4,
+  "impr": 2
+ },
+ {
+  "id": 61,
+  "inep": "99962418",
+  "nome": "E.E. Professora Cecília Moura",
+  "sre": 30,
+  "mun": "3137536",
+  "x": 399.89,
+  "y": 343.82,
+  "end": "Praça da Matriz, 947",
+  "bairro": "Centro",
+  "cep": "32219-311",
+  "tel": "(00) 3006-6483",
+  "email": "escola.99962418@example.org",
+  "alunos": 839,
+  "turmas": 28,
+  "mods": [
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 200,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 66,
+   "rack": "Sem rack",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 30,
+   "estado": "Parcialmente em uso",
+   "area": 46
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 19,
+   "cob": 100,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 37,
+   "pos81": 23,
+   "pos230": 20,
+   "daten": 15,
+   "pos06": 9,
+   "outros": 3
+  },
+  "proj": 6,
+  "lousas": 3,
+  "impr": 3
+ },
+ {
+  "id": 62,
+  "inep": "93517316",
+  "nome": "E.E. Professora Geraldo Paixão",
+  "sre": 30,
+  "mun": "3171006",
+  "x": 396.05,
+  "y": 321.43,
+  "end": "Rua Sete de Setembro, 1643",
+  "bairro": "Vila Nova",
+  "cep": "31133-838",
+  "tel": "(00) 3868-6703",
+  "email": "escola.93517316@example.org",
+  "alunos": 1217,
+  "turmas": 41,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 200,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 79,
+   "rack": "Rack 44U",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 10,
+   "estado": "Parcialmente em uso",
+   "area": 73
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 18,
+   "cob": 100,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 51,
+   "pos81": 17,
+   "pos230": 16,
+   "daten": 13,
+   "pos06": 8,
+   "outros": 0
+  },
+  "proj": 6,
+  "lousas": 5,
+  "impr": 5
+ },
+ {
+  "id": 63,
+  "inep": "91777454",
+  "nome": "E.E. Aurélio Brandão",
+  "sre": 31,
+  "mun": "3162948",
+  "x": 430.59,
+  "y": 618.16,
+  "end": "Rua das Flores, 211",
+  "bairro": "Vila Nova",
+  "cep": "33637-522",
+  "tel": "(00) 3764-8499",
+  "email": "escola.91777454@example.org",
+  "alunos": 918,
+  "turmas": 31,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Rádio",
+   "links": 3,
+   "vel": 1500,
+   "prog": "Contrato estadual",
+   "pontos": 69,
+   "rack": "Rack 24U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 17,
+   "cob": 60,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 53,
+   "pos81": 2,
+   "pos230": 3,
+   "daten": 4,
+   "pos06": 5,
+   "outros": 4
+  },
+  "proj": 6,
+  "lousas": 3,
+  "impr": 2
+ },
+ {
+  "id": 64,
+  "inep": "95755892",
+  "nome": "E.E. Professor Teodoro Paixão",
+  "sre": 31,
+  "mun": "3163904",
+  "x": 390.51,
+  "y": 651.19,
+  "end": "Avenida Central, 1396",
+  "bairro": "Jardim América",
+  "cep": "33996-528",
+  "tel": "(00) 3178-9042",
+  "email": "escola.95755892@example.org",
+  "alunos": 753,
+  "turmas": 25,
+  "mods": [
+   "Ensino Médio"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 200,
+   "prog": "Contrato estadual",
+   "pontos": 106,
+   "rack": "Rack 44U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 13,
+   "estado": "Em uso",
+   "area": 74
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 4,
+   "cob": 75,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 75,
+   "pos81": 13,
+   "pos230": 12,
+   "daten": 0,
+   "pos06": 11,
+   "outros": 3
+  },
+  "proj": 4,
+  "lousas": 2,
+  "impr": 1
+ },
+ {
+  "id": 65,
+  "inep": "96520284",
+  "nome": "E.E. Dona Joaquim Brandão",
+  "sre": 32,
+  "mun": "3166600",
+  "x": 466.87,
+  "y": 483.83,
+  "end": "Avenida dos Ipês, 1212",
+  "bairro": "Centro",
+  "cep": "35700-360",
+  "tel": "(00) 3865-7501",
+  "email": "escola.96520284@example.org",
+  "alunos": 637,
+  "turmas": 21,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Vivo",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 100,
+   "prog": "Contrato estadual",
+   "pontos": 64,
+   "rack": "Rack 24U",
+   "obra": "Concluída 2024"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 30,
+   "estado": "Parcialmente em uso",
+   "area": 44
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 14,
+   "cob": 100,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 76,
+   "pos81": 4,
+   "pos230": 18,
+   "daten": 12,
+   "pos06": 6,
+   "outros": 2
+  },
+  "proj": 8,
+  "lousas": 5,
+  "impr": 5
+ },
+ {
+  "id": 66,
+  "inep": "90160783",
+  "nome": "E.E. Doutor Joaquim Bittencourt",
+  "sre": 32,
+  "mun": "3111507",
+  "x": 433.11,
+  "y": 493.29,
+  "end": "Rua Sete de Setembro, 289",
+  "bairro": "Jardim América",
+  "cep": "36290-986",
+  "tel": "(00) 3575-8281",
+  "email": "escola.90160783@example.org",
+  "alunos": 744,
+  "turmas": 25,
+  "mods": [
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Rádio",
+   "links": 2,
+   "vel": 200,
+   "prog": "Contrato estadual",
+   "pontos": 97,
+   "rack": "Rack 24U",
+   "obra": "Concluída 2024"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 15,
+   "cob": 85,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 35,
+   "pos81": 7,
+   "pos230": 17,
+   "daten": 9,
+   "pos06": 2,
+   "outros": 7
+  },
+  "proj": 10,
+  "lousas": 5,
+  "impr": 4
+ },
+ {
+  "id": 67,
+  "inep": "94994727",
+  "nome": "E.E. Dona Geraldo Rezende",
+  "sre": 33,
+  "mun": "3148103",
+  "x": 370.07,
+  "y": 444.62,
+  "end": "Rua das Flores, 931",
+  "bairro": "Vila Nova",
+  "cep": "35711-882",
+  "tel": "(00) 3836-1425",
+  "email": "escola.94994727@example.org",
+  "alunos": 547,
+  "turmas": 18,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Starlink",
+   "tipo": "Satélite",
+   "links": 3,
+   "vel": 600,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 103,
+   "rack": "Rack 44U",
+   "obra": "Concluída 2024"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 11,
+   "cob": 75,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 26,
+   "pos81": 25,
+   "pos230": 1,
+   "daten": 11,
+   "pos06": 8,
+   "outros": 4
+  },
+  "proj": 10,
+  "lousas": 4,
+  "impr": 2
+ },
+ {
+  "id": 68,
+  "inep": "92274804",
+  "nome": "E.E. Doutor Benedito Quintela",
+  "sre": 33,
+  "mun": "3166808",
+  "x": 393.39,
+  "y": 479.21,
+  "end": "Avenida dos Ipês, 1891",
+  "bairro": "Centro",
+  "cep": "34543-887",
+  "tel": "(00) 3671-2078",
+  "email": "escola.92274804@example.org",
+  "alunos": 1153,
+  "turmas": 38,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais",
+   "EJA"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Starlink",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 800,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 43,
+   "rack": "Rack 12U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 7,
+   "cob": 100,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 9,
+   "pos81": 20,
+   "pos230": 2,
+   "daten": 12,
+   "pos06": 8,
+   "outros": 4
+  },
+  "proj": 12,
+  "lousas": 2,
+  "impr": 4
+ },
+ {
+  "id": 69,
+  "inep": "98299939",
+  "nome": "E.E. Doutor Lúcia Prates",
+  "sre": 34,
+  "mun": "3152131",
+  "x": 547.82,
+  "y": 229.25,
+  "end": "Rua São José, 671",
+  "bairro": "Vila Nova",
+  "cep": "35533-560",
+  "tel": "(00) 3591-2139",
+  "email": "escola.98299939@example.org",
+  "alunos": 229,
+  "turmas": 8,
+  "mods": [
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "TIM",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 1000,
+   "prog": "Contrato estadual",
+   "pontos": 40,
+   "rack": "Sem rack",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 23,
+   "estado": "Parcialmente em uso",
+   "area": 35
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 10,
+   "cob": 100,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 16,
+   "pos81": 20,
+   "pos230": 9,
+   "daten": 5,
+   "pos06": 4,
+   "outros": 1
+  },
+  "proj": 11,
+  "lousas": 2,
+  "impr": 3
+ },
+ {
+  "id": 70,
+  "inep": "92226333",
+  "nome": "E.E. Otávio Coimbra",
+  "sre": 34,
+  "mun": "3138104",
+  "x": 586.45,
+  "y": 339.72,
+  "end": "Praça da Matriz, 1073",
+  "bairro": "Santa Rita",
+  "cep": "37291-009",
+  "tel": "(00) 3008-5629",
+  "email": "escola.92226333@example.org",
+  "alunos": 286,
+  "turmas": 10,
+  "mods": [
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 800,
+   "prog": "Contrato estadual",
+   "pontos": 118,
+   "rack": "Rack 24U",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 25,
+   "estado": "Parcialmente em uso",
+   "area": 58
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 6,
+   "cob": 85,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 48,
+   "pos81": 24,
+   "pos230": 4,
+   "daten": 4,
+   "pos06": 1,
+   "outros": 8
+  },
+  "proj": 10,
+  "lousas": 0,
+  "impr": 5
+ },
+ {
+  "id": 71,
+  "inep": "96442986",
+  "nome": "E.E. Cecília Nogueira",
+  "sre": 35,
+  "mun": "3109501",
+  "x": 421.41,
+  "y": 682.2,
+  "end": "Travessa Primavera, 1982",
+  "bairro": "São Cristóvão",
+  "cep": "35152-810",
+  "tel": "(00) 3143-4059",
+  "email": "escola.96442986@example.org",
+  "alunos": 544,
+  "turmas": 18,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Starlink",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 400,
+   "prog": "Contrato estadual",
+   "pontos": 91,
+   "rack": "Sem rack",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 13,
+   "estado": "Parcialmente em uso",
+   "area": 38
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 22,
+   "cob": 75,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 49,
+   "pos81": 3,
+   "pos230": 7,
+   "daten": 15,
+   "pos06": 10,
+   "outros": 9
+  },
+  "proj": 2,
+  "lousas": 4,
+  "impr": 1
+ },
+ {
+  "id": 72,
+  "inep": "90280001",
+  "nome": "E.E. Professor Cecília Coimbra",
+  "sre": 35,
+  "mun": "3111002",
+  "x": 439.86,
+  "y": 707.39,
+  "end": "Avenida Central, 38",
+  "bairro": "Vila Nova",
+  "cep": "33534-040",
+  "tel": "(00) 3944-0990",
+  "email": "escola.90280001@example.org",
+  "alunos": 848,
+  "turmas": 28,
+  "mods": [
+   "Ensino Médio",
+   "EJA"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 1500,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 103,
+   "rack": "Sem rack",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 25,
+   "estado": "Em uso",
+   "area": 54
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 6,
+   "cob": 60,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 26,
+   "pos81": 25,
+   "pos230": 4,
+   "daten": 10,
+   "pos06": 6,
+   "outros": 9
+  },
+  "proj": 11,
+  "lousas": 6,
+  "impr": 1
+ },
+ {
+  "id": 73,
+  "inep": "90212482",
+  "nome": "E.E. Otávio Lacerda",
+  "sre": 36,
+  "mun": "3140001",
+  "x": 687.93,
+  "y": 579.64,
+  "end": "Rua do Comércio, 1446",
+  "bairro": "Centro",
+  "cep": "32684-508",
+  "tel": "(00) 3975-5680",
+  "email": "escola.90212482@example.org",
+  "alunos": 733,
+  "turmas": 24,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Médio",
+   "EJA"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 100,
+   "prog": "Contrato estadual",
+   "pontos": 67,
+   "rack": "Rack 44U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 15,
+   "estado": "Desativada",
+   "area": 39
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 7,
+   "cob": 85,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 73,
+   "pos81": 20,
+   "pos230": 2,
+   "daten": 15,
+   "pos06": 7,
+   "outros": 8
+  },
+  "proj": 6,
+  "lousas": 0,
+  "impr": 4
+ },
+ {
+  "id": 74,
+  "inep": "90771442",
+  "nome": "E.E. Geraldo Bittencourt",
+  "sre": 36,
+  "mun": "3165560",
+  "x": 735.94,
+  "y": 554.39,
+  "end": "Rua Sete de Setembro, 755",
+  "bairro": "São Cristóvão",
+  "cep": "32458-183",
+  "tel": "(00) 3953-0579",
+  "email": "escola.90771442@example.org",
+  "alunos": 567,
+  "turmas": 19,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 100,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 72,
+   "rack": "Rack 24U",
+   "obra": "Prevista 2026"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 10,
+   "estado": "Desativada",
+   "area": 38
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 11,
+   "cob": 75,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 66,
+   "pos81": 1,
+   "pos230": 12,
+   "daten": 2,
+   "pos06": 7,
+   "outros": 4
+  },
+  "proj": 5,
+  "lousas": 2,
+  "impr": 1
+ },
+ {
+  "id": 75,
+  "inep": "94112546",
+  "nome": "E.E. Professor Benedito Lacerda",
+  "sre": 37,
+  "mun": "3167400",
+  "x": 467.79,
+  "y": 736.93,
+  "end": "Rua do Comércio, 23",
+  "bairro": "São Cristóvão",
+  "cep": "30391-238",
+  "tel": "(00) 3554-5675",
+  "email": "escola.94112546@example.org",
+  "alunos": 1110,
+  "turmas": 37,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Médio",
+   "EJA"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Starlink",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 300,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 55,
+   "rack": "Rack 44U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 21,
+   "cob": 60,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 35,
+   "pos81": 2,
+   "pos230": 1,
+   "daten": 7,
+   "pos06": 8,
+   "outros": 6
+  },
+  "proj": 12,
+  "lousas": 2,
+  "impr": 4
+ },
+ {
+  "id": 76,
+  "inep": "94893511",
+  "nome": "E.E. Raimundo Valadão",
+  "sre": 37,
+  "mun": "3107901",
+  "x": 436.91,
+  "y": 771.95,
+  "end": "Rua São José, 1752",
+  "bairro": "Vila Nova",
+  "cep": "36438-717",
+  "tel": "(00) 3851-5345",
+  "email": "escola.94893511@example.org",
+  "alunos": 1312,
+  "turmas": 44,
+  "mods": [
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "TIM",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 100,
+   "prog": "Contrato estadual",
+   "pontos": 38,
+   "rack": "Sem rack",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 14,
+   "estado": "Parcialmente em uso",
+   "area": 55
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 11,
+   "cob": 100,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 68,
+   "pos81": 11,
+   "pos230": 6,
+   "daten": 14,
+   "pos06": 4,
+   "outros": 7
+  },
+  "proj": 5,
+  "lousas": 6,
+  "impr": 1
+ },
+ {
+  "id": 77,
+  "inep": "98614423",
+  "nome": "E.E. Professor Otávio Siqueira",
+  "sre": 38,
+  "mun": "3115201",
+  "x": 592.09,
+  "y": 648.25,
+  "end": "Rua das Flores, 1396",
+  "bairro": "Vila Nova",
+  "cep": "34262-839",
+  "tel": "(00) 3178-0509",
+  "email": "escola.98614423@example.org",
+  "alunos": 286,
+  "turmas": 10,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 100,
+   "prog": "Contrato estadual",
+   "pontos": 32,
+   "rack": "Sem rack",
+   "obra": "Concluída 2024"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 22,
+   "estado": "Em uso",
+   "area": 60
+  },
+  "wifi": {
+   "possui": false,
+   "aps": 0,
+   "cob": 0,
+   "ctrl": "—",
+   "ssid": "—"
+  },
+  "parque": {
+   "chromebooks": 47,
+   "pos81": 21,
+   "pos230": 20,
+   "daten": 2,
+   "pos06": 9,
+   "outros": 9
+  },
+  "proj": 5,
+  "lousas": 6,
+  "impr": 1
+ },
+ {
+  "id": 78,
+  "inep": "93602338",
+  "nome": "E.E. Lúcia Arantes",
+  "sre": 38,
+  "mun": "3134301",
+  "x": 554.66,
+  "y": 669.0,
+  "end": "Rua do Comércio, 573",
+  "bairro": "Vila Nova",
+  "cep": "37307-904",
+  "tel": "(00) 3152-0567",
+  "email": "escola.93602338@example.org",
+  "alunos": 1116,
+  "turmas": 37,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio",
+   "EJA"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 1000,
+   "prog": "Contrato estadual",
+   "pontos": 36,
+   "rack": "Rack 12U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 15,
+   "estado": "Em uso",
+   "area": 61
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 15,
+   "cob": 75,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 67,
+   "pos81": 7,
+   "pos230": 20,
+   "daten": 0,
+   "pos06": 6,
+   "outros": 5
+  },
+  "proj": 8,
+  "lousas": 4,
+  "impr": 4
+ },
+ {
+  "id": 79,
+  "inep": "91679975",
+  "nome": "E.E. Professora Iracema Bittencourt",
+  "sre": 39,
+  "mun": "3128709",
+  "x": 386.66,
+  "y": 671.79,
+  "end": "Praça da Matriz, 1355",
+  "bairro": "Jardim América",
+  "cep": "34366-546",
+  "tel": "(00) 3835-0916",
+  "email": "escola.91679975@example.org",
+  "alunos": 1066,
+  "turmas": 36,
+  "mods": [
+   "EJA"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Ligga",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 300,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 65,
+   "rack": "Rack 12U",
+   "obra": "Prevista 2026"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 17,
+   "estado": "Em uso",
+   "area": 57
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 9,
+   "cob": 75,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 24,
+   "pos81": 25,
+   "pos230": 15,
+   "daten": 9,
+   "pos06": 2,
+   "outros": 7
+  },
+  "proj": 1,
+  "lousas": 0,
+  "impr": 1
+ },
+ {
+  "id": 80,
+  "inep": "98829762",
+  "nome": "E.E. Helena Viana",
+  "sre": 39,
+  "mun": "3143203",
+  "x": 376.0,
+  "y": 652.12,
+  "end": "Travessa Primavera, 1977",
+  "bairro": "Centro",
+  "cep": "36120-721",
+  "tel": "(00) 3964-6481",
+  "email": "escola.98829762@example.org",
+  "alunos": 144,
+  "turmas": 5,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 800,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 87,
+   "rack": "Rack 12U",
+   "obra": "Concluída 2024"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 14,
+   "estado": "Desativada",
+   "area": 70
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 7,
+   "cob": 85,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 75,
+   "pos81": 5,
+   "pos230": 12,
+   "daten": 9,
+   "pos06": 11,
+   "outros": 4
+  },
+  "proj": 3,
+  "lousas": 1,
+  "impr": 1
+ },
+ {
+  "id": 81,
+  "inep": "97493206",
+  "nome": "E.E. Dona Aurélio Paixão",
+  "sre": 40,
+  "mun": "3146909",
+  "x": 574.68,
+  "y": 475.86,
+  "end": "Rua das Flores, 553",
+  "bairro": "Jardim América",
+  "cep": "34088-709",
+  "tel": "(00) 3069-5742",
+  "email": "escola.97493206@example.org",
+  "alunos": 754,
+  "turmas": 25,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "EJA"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Rádio",
+   "links": 3,
+   "vel": 800,
+   "prog": "Contrato estadual",
+   "pontos": 77,
+   "rack": "Rack 44U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 12,
+   "estado": "Parcialmente em uso",
+   "area": 69
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 14,
+   "cob": 100,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 61,
+   "pos81": 25,
+   "pos230": 18,
+   "daten": 7,
+   "pos06": 2,
+   "outros": 7
+  },
+  "proj": 2,
+  "lousas": 6,
+  "impr": 1
+ },
+ {
+  "id": 82,
+  "inep": "95669869",
+  "nome": "E.E. Professor Iracema Paixão",
+  "sre": 40,
+  "mun": "3135704",
+  "x": 626.13,
+  "y": 474.49,
+  "end": "Rua Sete de Setembro, 1452",
+  "bairro": "Centro",
+  "cep": "37066-965",
+  "tel": "(00) 3669-2703",
+  "email": "escola.95669869@example.org",
+  "alunos": 1220,
+  "turmas": 41,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Ligga",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 800,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 95,
+   "rack": "Rack 12U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": false,
+   "aps": 0,
+   "cob": 0,
+   "ctrl": "—",
+   "ssid": "—"
+  },
+  "parque": {
+   "chromebooks": 38,
+   "pos81": 7,
+   "pos230": 3,
+   "daten": 1,
+   "pos06": 6,
+   "outros": 9
+  },
+  "proj": 9,
+  "lousas": 6,
+  "impr": 4
+ },
+ {
+  "id": 83,
+  "inep": "91374659",
+  "nome": "E.E. Professora Lúcia Quintela",
+  "sre": 41,
+  "mun": "3115458",
+  "x": 861.84,
+  "y": 298.39,
+  "end": "Rua Sete de Setembro, 1738",
+  "bairro": "Centro",
+  "cep": "35052-803",
+  "tel": "(00) 3407-7715",
+  "email": "escola.91374659@example.org",
+  "alunos": 1083,
+  "turmas": 36,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Médio"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 600,
+   "prog": "Contrato estadual",
+   "pontos": 82,
+   "rack": "Rack 24U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 15,
+   "estado": "Parcialmente em uso",
+   "area": 64
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 13,
+   "cob": 85,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 34,
+   "pos81": 18,
+   "pos230": 1,
+   "daten": 4,
+   "pos06": 12,
+   "outros": 10
+  },
+  "proj": 2,
+  "lousas": 0,
+  "impr": 3
+ },
+ {
+  "id": 84,
+  "inep": "99608551",
+  "nome": "E.E. Professora Aurélio Rezende",
+  "sre": 41,
+  "mun": "3102852",
+  "x": 787.18,
+  "y": 331.79,
+  "end": "Praça da Matriz, 985",
+  "bairro": "Vila Nova",
+  "cep": "31293-404",
+  "tel": "(00) 3924-0568",
+  "email": "escola.99608551@example.org",
+  "alunos": 957,
+  "turmas": 32,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais",
+   "EJA"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Claro",
+   "tipo": "Fibra óptica",
+   "links": 1,
+   "vel": 300,
+   "prog": "Contrato estadual",
+   "pontos": 30,
+   "rack": "Rack 44U",
+   "obra": "Em execução"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 19,
+   "cob": 100,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 80,
+   "pos81": 4,
+   "pos230": 19,
+   "daten": 8,
+   "pos06": 5,
+   "outros": 1
+  },
+  "proj": 2,
+  "lousas": 3,
+  "impr": 5
+ },
+ {
+  "id": 85,
+  "inep": "99775699",
+  "nome": "E.E. Professor Augusta Prates",
+  "sre": 42,
+  "mun": "3148301",
+  "x": 724.24,
+  "y": 627.49,
+  "end": "Avenida Central, 1904",
+  "bairro": "Centro",
+  "cep": "39219-798",
+  "tel": "(00) 3103-4687",
+  "email": "escola.99775699@example.org",
+  "alunos": 959,
+  "turmas": 32,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Vivo",
+   "tipo": "Rádio",
+   "links": 3,
+   "vel": 1000,
+   "prog": "Contrato estadual",
+   "pontos": 47,
+   "rack": "Rack 12U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 28,
+   "estado": "Em uso",
+   "area": 74
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 22,
+   "cob": 100,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 50,
+   "pos81": 10,
+   "pos230": 7,
+   "daten": 1,
+   "pos06": 11,
+   "outros": 7
+  },
+  "proj": 5,
+  "lousas": 2,
+  "impr": 1
+ },
+ {
+  "id": 86,
+  "inep": "97434162",
+  "nome": "E.E. Professor Benedito Fontoura",
+  "sre": 42,
+  "mun": "3156304",
+  "x": 735.5,
+  "y": 661.7,
+  "end": "Travessa Primavera, 561",
+  "bairro": "Santa Rita",
+  "cep": "36828-619",
+  "tel": "(00) 3661-1462",
+  "email": "escola.97434162@example.org",
+  "alunos": 301,
+  "turmas": 10,
+  "mods": [
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Starlink",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 1000,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 72,
+   "rack": "Rack 24U",
+   "obra": "Prevista 2026"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 13,
+   "cob": 75,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 39,
+   "pos81": 22,
+   "pos230": 16,
+   "daten": 12,
+   "pos06": 2,
+   "outros": 8
+  },
+  "proj": 10,
+  "lousas": 0,
+  "impr": 2
+ },
+ {
+  "id": 87,
+  "inep": "92979359",
+  "nome": "E.E. Otávio Prates",
+  "sre": 43,
+  "mun": "3118205",
+  "x": 304.83,
+  "y": 526.63,
+  "end": "Rua Sete de Setembro, 1211",
+  "bairro": "Bom Jesus",
+  "cep": "35730-352",
+  "tel": "(00) 3167-4237",
+  "email": "escola.92979359@example.org",
+  "alunos": 353,
+  "turmas": 12,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Médio",
+   "EJA"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "TIM",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 300,
+   "prog": "Contrato estadual",
+   "pontos": 107,
+   "rack": "Sem rack",
+   "obra": "Concluída 2024"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 25,
+   "estado": "Parcialmente em uso",
+   "area": 61
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 18,
+   "cob": 60,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 1,
+   "pos81": 15,
+   "pos230": 4,
+   "daten": 5,
+   "pos06": 9,
+   "outros": 0
+  },
+  "proj": 4,
+  "lousas": 2,
+  "impr": 5
+ },
+ {
+  "id": 88,
+  "inep": "91716512",
+  "nome": "E.E. Professor Iracema Nogueira",
+  "sre": 43,
+  "mun": "3171105",
+  "x": 239.73,
+  "y": 496.35,
+  "end": "Rua das Flores, 1057",
+  "bairro": "Santa Rita",
+  "cep": "36131-574",
+  "tel": "(00) 3662-9728",
+  "email": "escola.91716512@example.org",
+  "alunos": 718,
+  "turmas": 24,
+  "mods": [
+   "Ensino Médio",
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Oi",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 400,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 66,
+   "rack": "Rack 12U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 22,
+   "estado": "Desativada",
+   "area": 54
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 22,
+   "cob": 75,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 66,
+   "pos81": 24,
+   "pos230": 7,
+   "daten": 1,
+   "pos06": 12,
+   "outros": 9
+  },
+  "proj": 7,
+  "lousas": 5,
+  "impr": 3
+ },
+ {
+  "id": 89,
+  "inep": "95036433",
+  "nome": "E.E. Doutor Otávio Siqueira",
+  "sre": 44,
+  "mun": "3130705",
+  "x": 278.75,
+  "y": 451.73,
+  "end": "Rua do Comércio, 1731",
+  "bairro": "Santa Rita",
+  "cep": "39146-185",
+  "tel": "(00) 3300-1599",
+  "email": "escola.95036433@example.org",
+  "alunos": 1194,
+  "turmas": 40,
+  "mods": [
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio"
+  ],
+  "turnos": "Manhã e tarde",
+  "con": {
+   "oper": "Vivo",
+   "tipo": "Fibra óptica",
+   "links": 3,
+   "vel": 100,
+   "prog": "Contrato estadual",
+   "pontos": 70,
+   "rack": "Sem rack",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 21,
+   "estado": "Parcialmente em uso",
+   "area": 56
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 20,
+   "cob": 85,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 74,
+   "pos81": 9,
+   "pos230": 14,
+   "daten": 3,
+   "pos06": 7,
+   "outros": 0
+  },
+  "proj": 11,
+  "lousas": 4,
+  "impr": 5
+ },
+ {
+  "id": 90,
+  "inep": "95749046",
+  "nome": "E.E. Teodoro Siqueira",
+  "sre": 44,
+  "mun": "3103504",
+  "x": 239.64,
+  "y": 401.49,
+  "end": "Avenida dos Ipês, 1176",
+  "bairro": "São Cristóvão",
+  "cep": "32346-323",
+  "tel": "(00) 3883-2954",
+  "email": "escola.95749046@example.org",
+  "alunos": 210,
+  "turmas": 7,
+  "mods": [
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Integral",
+  "con": {
+   "oper": "Vivo",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 50,
+   "prog": "Contrato estadual",
+   "pontos": 82,
+   "rack": "Rack 12U",
+   "obra": "Concluída 2024"
+  },
+  "sala": {
+   "possui": false,
+   "pcs": 0,
+   "estado": "—",
+   "area": 0
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 10,
+   "cob": 75,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 20,
+   "pos81": 15,
+   "pos230": 2,
+   "daten": 4,
+   "pos06": 9,
+   "outros": 6
+  },
+  "proj": 11,
+  "lousas": 3,
+  "impr": 4
+ },
+ {
+  "id": 91,
+  "inep": "93796108",
+  "nome": "E.E. Valdir Siqueira",
+  "sre": 45,
+  "mun": "3144375",
+  "x": 415.42,
+  "y": 225.52,
+  "end": "Travessa Primavera, 649",
+  "bairro": "Jardim América",
+  "cep": "31682-392",
+  "tel": "(00) 3515-9644",
+  "email": "escola.93796108@example.org",
+  "alunos": 1187,
+  "turmas": 40,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Ligga",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 1500,
+   "prog": "Wi-Fi Brasil (GESAC)",
+   "pontos": 92,
+   "rack": "Rack 12U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 30,
+   "estado": "Desativada",
+   "area": 43
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 11,
+   "cob": 85,
+   "ctrl": "Controladora local",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 45,
+   "pos81": 24,
+   "pos230": 6,
+   "daten": 5,
+   "pos06": 12,
+   "outros": 6
+  },
+  "proj": 1,
+  "lousas": 1,
+  "impr": 2
+ },
+ {
+  "id": 92,
+  "inep": "99964392",
+  "nome": "E.E. Marta Duarte",
+  "sre": 45,
+  "mun": "3170479",
+  "x": 418.66,
+  "y": 182.32,
+  "end": "Rua das Flores, 1365",
+  "bairro": "Centro",
+  "cep": "30323-049",
+  "tel": "(00) 3706-1897",
+  "email": "escola.99964392@example.org",
+  "alunos": 176,
+  "turmas": 6,
+  "mods": [
+   "Ensino Médio em Tempo Integral",
+   "EJA"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Algar Telecom",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 200,
+   "prog": "Contrato estadual",
+   "pontos": 113,
+   "rack": "Rack 24U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 27,
+   "estado": "Parcialmente em uso",
+   "area": 41
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 5,
+   "cob": 85,
+   "ctrl": "Controladora em nuvem",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 77,
+   "pos81": 22,
+   "pos230": 4,
+   "daten": 13,
+   "pos06": 1,
+   "outros": 8
+  },
+  "proj": 12,
+  "lousas": 4,
+  "impr": 1
+ },
+ {
+  "id": 93,
+  "inep": "93934345",
+  "nome": "E.E. Professora Marta Siqueira",
+  "sre": 46,
+  "mun": "3130804",
+  "x": 542.84,
+  "y": 671.55,
+  "end": "Rua das Flores, 36",
+  "bairro": "Santa Rita",
+  "cep": "31458-928",
+  "tel": "(00) 3113-9406",
+  "email": "escola.93934345@example.org",
+  "alunos": 1222,
+  "turmas": 41,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais",
+   "Ensino Fundamental – Anos Finais",
+   "Ensino Médio em Tempo Integral"
+  ],
+  "turnos": "Manhã e noite",
+  "con": {
+   "oper": "Vivo",
+   "tipo": "Fibra óptica",
+   "links": 2,
+   "vel": 300,
+   "prog": "PIEC – Educação Conectada",
+   "pontos": 62,
+   "rack": "Rack 12U",
+   "obra": "Concluída 2025"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 25,
+   "estado": "Em uso",
+   "area": 41
+  },
+  "wifi": {
+   "possui": true,
+   "aps": 14,
+   "cob": 75,
+   "ctrl": "Sem controladora",
+   "ssid": "Escola-Estudante / Escola-Admin"
+  },
+  "parque": {
+   "chromebooks": 37,
+   "pos81": 11,
+   "pos230": 10,
+   "daten": 13,
+   "pos06": 11,
+   "outros": 1
+  },
+  "proj": 2,
+  "lousas": 6,
+  "impr": 1
+ },
+ {
+  "id": 94,
+  "inep": "96471232",
+  "nome": "E.E. Clarice Brandão",
+  "sre": 46,
+  "mun": "3111606",
+  "x": 467.53,
+  "y": 660.26,
+  "end": "Rua Sete de Setembro, 1648",
+  "bairro": "São Cristóvão",
+  "cep": "32732-115",
+  "tel": "(00) 3135-0960",
+  "email": "escola.96471232@example.org",
+  "alunos": 333,
+  "turmas": 11,
+  "mods": [
+   "Ensino Fundamental – Anos Iniciais"
+  ],
+  "turnos": "Manhã, tarde e noite",
+  "con": {
+   "oper": "Algar Telecom",
+   "tipo": "Rádio",
+   "links": 3,
+   "vel": 1000,
+   "prog": "Contrato estadual",
+   "pontos": 103,
+   "rack": "Rack 44U",
+   "obra": "Não prevista"
+  },
+  "sala": {
+   "possui": true,
+   "pcs": 18,
+   "estado": "Desativada",
+   "area": 36
+  },
+  "wifi": {
+   "possui": false,
+   "aps": 0,
+   "cob": 0,
+   "ctrl": "—",
+   "ssid": "—"
+  },
+  "parque": {
+   "chromebooks": 16,
+   "pos81": 15,
+   "pos230": 15,
+   "daten": 3,
+   "pos06": 6,
+   "outros": 7
+  },
+  "proj": 1,
+  "lousas": 0,
+  "impr": 3
+ }
+]

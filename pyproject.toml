@@ -1,0 +1,16 @@
+[project]
+name = "painel-escolas-fastapi"
+version = "0.1.0"
+description = "Painel de escolas (demo de portfólio): parque tecnológico e conectividade, com dados fictícios"
+requires-python = ">=3.11"
+dependencies = ["fastapi>=0.115", "uvicorn>=0.30"]
+
+[dependency-groups]
+dev = ["pytest>=8", "httpx>=0.27"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["testes"]

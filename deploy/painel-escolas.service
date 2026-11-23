@@ -1,0 +1,16 @@
+# Exemplo genérico de serviço systemd (ajuste usuário, pasta e porta).
+[Unit]
+Description=Painel de Escolas (FastAPI)
+After=network.target
+
+[Service]
+User=app
+WorkingDirectory=/opt/painel-escolas
+Environment=PAINEL_DADOS=/var/lib/painel-escolas
+Environment=PAINEL_HOST=127.0.0.1
+Environment=PAINEL_PORTA=8000
+ExecStart=/opt/painel-escolas/.venv/bin/python -m servidor.app
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

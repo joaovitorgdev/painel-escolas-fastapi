@@ -81,3 +81,18 @@ def test_edicao_concorrente_nao_sobrescreve(tmp_path):
 
     # quem recarrega (rev atual) grava normalmente
     assert c.put(f"/api/escolas/{original['id']}", json={**primeira.json(), "nome": "E.E. Bia"}).json()["rev"] == 2
+
+
+def test_escola_invalida_e_corpo_sem_tamanho_sao_recusados(tmp_path):
+    c = cliente(tmp_path)
+
+    assert c.post("/api/escolas", json={"nome": "X"}).status_code == 422
+    assert c.post("/api/escolas", json={"nome": "E.E. Teste", "inep": "123"}).status_code == 422
+    nova = c.post("/api/escolas", json={"nome": "E.E. Teste", "inep": "90000002", "wifi": {"ok": 1}})
+    assert nova.status_code == 201 and nova.json()["wifi"] == {"ok": 1}  # campo extra preservado
+
+    def pedacos():
+        yield b'{"nome": "E.E. Chunk"}'
+
+    r = c.post("/api/escolas", content=pedacos(), headers={"content-type": "application/json"})
+    assert r.status_code == 411

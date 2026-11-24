@@ -8,6 +8,10 @@ escolas e uma área de documentos com upload de arquivos e fotos, compartilhada 
 > (gerados por `servidor/seed/gerar_seed.py`). Só a malha de municípios e regionais é real e
 > pública (IBGE). Projeto inspirado num sistema interno que o autor desenvolveu.
 
+![Dashboard com mapa por regional](docs/painel.png)
+
+![Documentação interativa da API (Swagger)](docs/swagger.png)
+
 ## Funcionalidades
 
 - **Dashboard com mapa** (SVG) por regional e município, indicadores que mudam conforme o recorte e

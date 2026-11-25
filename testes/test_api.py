@@ -57,15 +57,15 @@ def test_fluxo_completo(tmp_path):
 
     # arquivo compartilhado por duas linhas só sai quando a última some
     up = c.post("/api/arquivos?nome=doc.pdf", content=b"%PDF").json()
-    a = c.post("/api/c/arquivos", json={"asset": up["id"]}).json()
-    b = c.post("/api/c/arquivos", json={"asset": up["id"]}).json()
+    a = c.post("/api/c/arquivos", json={"asset": up["id"], "cat": "manual", "titulo": "Manual A"}).json()
+    b = c.post("/api/c/arquivos", json={"asset": up["id"], "cat": "manual", "titulo": "Manual B"}).json()
     c.delete(f"/api/c/arquivos/{a['id']}")
     assert c.get(f"/_blob/{up['id']}").status_code == 200
     c.delete(f"/api/c/arquivos/{b['id']}")
     assert c.get(f"/_blob/{up['id']}").status_code == 404
 
     # os dados sobrevivem a um reinício do servidor
-    c.post("/api/c/orcamentos", json={"valor": 1500})
+    c.post("/api/c/orcamentos", json={"ek": "90000001", "forn": "Rede Ltda", "valor": 1500})
     assert cliente(tmp_path).get("/api/tudo").json()["orcamentos"][0]["valor"] == 1500
 
 
@@ -88,8 +88,9 @@ def test_escola_invalida_e_corpo_sem_tamanho_sao_recusados(tmp_path):
 
     assert c.post("/api/escolas", json={"nome": "X"}).status_code == 422
     assert c.post("/api/escolas", json={"nome": "E.E. Teste", "inep": "123"}).status_code == 422
-    nova = c.post("/api/escolas", json={"nome": "E.E. Teste", "inep": "90000002", "wifi": {"ok": 1}})
-    assert nova.status_code == 201 and nova.json()["wifi"] == {"ok": 1}  # campo extra preservado
+    assert c.post("/api/escolas", json={"nome": "E.E. Teste", "wifi": {"ok": 1}}).status_code == 422  # campo desconhecido
+    nova = c.post("/api/escolas", json={"nome": "E.E. Teste", "inep": "—", "mun": 3156601, "wifi": {"aps": 2}})
+    assert nova.status_code == 201 and nova.json()["wifi"] == {"aps": 2} and nova.json()["mun"] == "3156601"
 
     def pedacos():
         yield b'{"nome": "E.E. Chunk"}'

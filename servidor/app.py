@@ -5,14 +5,14 @@ Rodar:  uv run python -m servidor.app      (abre em http://127.0.0.1:8000)
 import os
 from pathlib import Path
 
-from fastapi import Body, FastAPI, HTTPException, Request, Response
+from fastapi import Body, FastAPI, HTTPException, Path as Caminho, Request, Response
 from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel, ConfigDict, Field
 from starlette.concurrency import run_in_threadpool
 
 from servidor.armazenamento import COLECOES, Armazenamento, Conflito, CotaEsgotada
+from servidor.modelos import MODELOS, Ek, Escola, Meta
 
 RAIZ = Path(__file__).resolve().parent.parent
 DADOS = Path(os.environ.get("PAINEL_DADOS", RAIZ / "dados"))
@@ -48,18 +48,6 @@ async def guarda(req: Request, chamar):
         if tam > MAX_JSON and req.url.path != "/api/arquivos":
             return JSONResponse({"code": "too_large"}, status_code=413)
     return await chamar(req)
-
-
-class Escola(BaseModel):
-    """Campos validados; os demais (wifi, parque, sala...) passam como estão."""
-    model_config = ConfigDict(extra="allow")
-    nome: str = Field(min_length=2, max_length=200)
-    inep: str = Field(default="", pattern=r"^(\d{8}|—)?$", description="8 dígitos; vazio ou '—' quando não informado")
-    sre: int | None = Field(default=None, ge=0)
-    mun: str | None = Field(default=None, max_length=100)
-    alunos: int | None = Field(default=None, ge=0)
-    turmas: int | None = Field(default=None, ge=0)
-    rev: int = Field(default=0, ge=0, description="Revisão lida pelo cliente; diferente da atual → 409")
 
 
 def erro(status: int, code: str) -> HTTPException:
@@ -125,20 +113,32 @@ def remover_escolas(ids: list[int] = Body(embed=True)) -> dict:
 
 
 # ---------- coleções ----------
-@app.post("/api/c/{col}", status_code=201)
-def adicionar(col: str, dados: dict = Body()) -> dict:
-    return db.adicionar(colecao(col), dados)
+def rotas_da_colecao(col: str, Novo: type, Edicao: type) -> None:
+    """POST e PATCH de cada coleção com o próprio modelo (aparece tipado no /api/docs)."""
+
+    @app.post(f"/api/c/{col}", status_code=201, tags=["coleções"], name=f"adicionar_{col}")
+    def adicionar(dados: Novo) -> dict:
+        return db.adicionar(col, dados.model_dump(exclude_unset=True))
+
+    @app.patch(f"/api/c/{col}/{{id_}}", tags=["coleções"], name=f"atualizar_{col}")
+    def atualizar(id_: str, patch: Edicao) -> dict:
+        r = db.atualizar(col, id_, patch.model_dump(exclude_unset=True))
+        if r is None:
+            raise erro(404, "nao_encontrado")
+        return r
 
 
-@app.patch("/api/c/{col}/{id_}")
-def atualizar(col: str, id_: str, patch: dict = Body()) -> dict:
-    r = db.atualizar(colecao(col), id_, patch)
-    if r is None:
-        raise erro(404, "nao_encontrado")
-    return r
+for _col, (_novo, _edicao) in MODELOS.items():
+    rotas_da_colecao(_col, _novo, _edicao)
 
 
-@app.delete("/api/c/{col}/{id_}", status_code=204)
+@app.api_route("/api/c/{col}", methods=["POST"], include_in_schema=False)
+@app.api_route("/api/c/{col}/{id_}", methods=["PATCH"], include_in_schema=False)
+def colecao_desconhecida(col: str) -> None:
+    raise erro(404, "colecao_inexistente")
+
+
+@app.delete("/api/c/{col}/{id_}", status_code=204, tags=["coleções"])
 def remover(col: str, id_: str) -> Response:
     if not db.remover(colecao(col), id_):
         raise erro(404, "nao_encontrado")
@@ -146,8 +146,8 @@ def remover(col: str, id_: str) -> Response:
 
 
 @app.put("/api/meta/{ek}", status_code=204)
-def definir_meta(ek: str, dados: dict = Body()) -> Response:
-    db.definir_meta(ek, dados)
+def definir_meta(dados: Meta, ek: Ek = Caminho()) -> Response:
+    db.definir_meta(ek, dados.model_dump())
     return Response(status_code=204)
 
 

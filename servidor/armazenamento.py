@@ -286,4 +286,4 @@ class Armazenamento:
     def uso(self) -> dict:
         with self.Leitura() as s:
             n, total = s.execute(select(func.count(), func.coalesce(func.sum(BlobDB.tam), 0))).one()
-        return {"files": n, "bytes": total}
+        return {"files": n, "bytes": int(total)}  # PostgreSQL devolve SUM como Decimal

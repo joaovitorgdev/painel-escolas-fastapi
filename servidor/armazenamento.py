@@ -1,14 +1,22 @@
-"""Camada de dados do Painel de Escolas.
+"""Camada de dados do Painel de Escolas (SQLAlchemy 2).
 
-Tudo o que a API lê ou grava passa por aqui. Hoje é um arquivo JSON; o banco de
-dados entra trocando só este módulo (mesmos métodos, mesmos formatos).
+Tudo o que a API lê ou grava passa por aqui, com os mesmos métodos e formatos de antes.
+Por padrão o banco é um SQLite em <pasta>/painel.db; com PAINEL_DB_URL o mesmo código
+usa PostgreSQL. As tabelas são criadas pelas migrações do Alembic (servidor/migracoes)
+quando o servidor sobe. Os arquivos enviados ficam em disco, em <pasta>/arquivos.
 """
 import json
 import os
 import secrets
-import threading
 import time
+from contextlib import contextmanager
 from pathlib import Path
+
+from alembic import command
+from alembic.config import Config
+from sqlalchemy import JSON, BigInteger, String, create_engine, delete, event, func, select, update
+from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, sessionmaker
+
 
 class CotaEsgotada(Exception):
     pass
@@ -20,138 +28,262 @@ class Conflito(Exception):
 
 COLECOES = ("links", "arquivos", "nte_registros", "escola_fotos", "orcamentos", "relatorios_salvos")
 SEED = Path(__file__).parent / "seed" / "escolas.json"
+MIGRACOES = Path(__file__).parent / "migracoes"
+# campos da escola que viram coluna; o resto do cadastro (wifi, parque, sala...) vai na coluna JSON
+ESCOLA_COLUNAS = ("nome", "inep", "sre", "mun", "alunos", "turmas")
 
 
-def _agora():
+def _agora() -> int:
     return int(time.time() * 1000)
 
 
-class Armazenamento:
-    # ponytail: arquivo JSON único com trava global; trocar pelo banco quando ele existir
-    def __init__(self, pasta: Path):
-        self.pasta = Path(pasta)
-        self.blobs = self.pasta / "arquivos"
-        self.blobs.mkdir(parents=True, exist_ok=True)
-        self.caminho = self.pasta / "banco.json"
-        self.trava = threading.Lock()
-        if self.caminho.exists():
-            self.d = json.loads(self.caminho.read_text(encoding="utf-8"))
-        else:
-            escolas = json.loads(SEED.read_text(encoding="utf-8"))
-            self.d = {"versao": 1, "escolas": escolas, "meta": {}, "blobs": {}, **{c: [] for c in COLECOES}}
-            self._gravar()
+def url_do_banco(pasta: Path) -> str:
+    return os.environ.get("PAINEL_DB_URL") or f"sqlite:///{Path(pasta) / 'painel.db'}"
 
-    def _gravar(self):
-        self.d["versao"] += 1
-        tmp = self.caminho.with_suffix(".tmp")
-        with open(tmp, "w", encoding="utf-8") as f:
-            json.dump(self.d, f, ensure_ascii=False)
-            f.flush()
-            os.fsync(f.fileno())
-        os.replace(tmp, self.caminho)
+
+# ---------- tabelas ----------
+class Base(DeclarativeBase):
+    pass
+
+
+class VersaoDB(Base):
+    """Uma linha só. O número sobe a cada gravação; o front compara para saber se recarrega."""
+    __tablename__ = "versao"
+    id: Mapped[int] = mapped_column(primary_key=True)
+    n: Mapped[int]
+
+
+class EscolaDB(Base):
+    __tablename__ = "escolas"
+    id: Mapped[int] = mapped_column(primary_key=True)
+    rev: Mapped[int] = mapped_column(default=0)
+    nome: Mapped[str] = mapped_column(String(200))
+    inep: Mapped[str | None] = mapped_column(String(8))
+    sre: Mapped[int | None]
+    mun: Mapped[str | None] = mapped_column(String(100))
+    alunos: Mapped[int | None]
+    turmas: Mapped[int | None]
+    dados: Mapped[dict] = mapped_column(JSON)
+
+
+class RegistroDB(Base):
+    """Linhas das coleções (links, arquivos, fotos, NTE, orçamentos, relatórios)."""
+    __tablename__ = "registros"
+    seq: Mapped[int] = mapped_column(primary_key=True)  # ordem de criação
+    id: Mapped[str] = mapped_column(String(16), unique=True)
+    colecao: Mapped[str] = mapped_column(String(32), index=True)
+    criado_em: Mapped[int] = mapped_column(BigInteger)
+    asset: Mapped[str | None] = mapped_column(String(64), index=True)
+    dados: Mapped[dict] = mapped_column(JSON)
+
+
+class MetaDB(Base):
+    __tablename__ = "meta"
+    ek: Mapped[str] = mapped_column(String(64), primary_key=True)
+    atualizado_em: Mapped[int] = mapped_column(BigInteger)
+    dados: Mapped[dict] = mapped_column(JSON)
+
+
+class BlobDB(Base):
+    __tablename__ = "blobs"
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    tipo: Mapped[str] = mapped_column(String(100))
+    tam: Mapped[int] = mapped_column(BigInteger)
+
+
+# ---------- conversões linha <-> dict da API ----------
+def _escola_dict(e: EscolaDB) -> dict:
+    colunas = {c: getattr(e, c) for c in ESCOLA_COLUNAS if getattr(e, c) is not None}
+    return {**e.dados, **colunas, "id": e.id, "rev": e.rev}
+
+
+def _escola_campos(dados: dict) -> dict:
+    resto = {k: v for k, v in dados.items() if k not in ESCOLA_COLUNAS and k not in ("id", "rev")}
+    return {**{c: dados.get(c) for c in ESCOLA_COLUNAS}, "dados": resto}
+
+
+def _registro_dict(r: RegistroDB) -> dict:
+    asset = {"asset": r.asset} if r.asset is not None else {}
+    return {**r.dados, **asset, "id": r.id, "criadoEm": r.criado_em}
+
+
+def _motor(url: str):
+    """Devolve (motor de escrita, motor de leitura)."""
+    if not url.startswith("sqlite"):
+        motor = create_engine(url, pool_pre_ping=True)
+        # a leitura completa (/api/tudo) vê um retrato só, mesmo com gravações no meio
+        return motor, motor.execution_options(isolation_level="REPEATABLE READ")
+
+    motor = create_engine(url)
+
+    # o driver sqlite3 do Python não abre transação antes de SELECT; sem isto, as várias
+    # consultas de tudo_json() poderiam ver estados diferentes. Receita da doc do SQLAlchemy.
+    @event.listens_for(motor, "connect")
+    def _ao_conectar(con, _):
+        con.isolation_level = None
+        con.execute("PRAGMA journal_mode=WAL")  # leitura não espera gravação
+        con.execute("PRAGMA busy_timeout=5000")
+
+    @event.listens_for(motor, "begin")
+    def _ao_iniciar(conexao):
+        conexao.exec_driver_sql("BEGIN")
+
+    return motor, motor
+
+
+def migrar(motor) -> None:
+    cfg = Config()
+    cfg.set_main_option("script_location", str(MIGRACOES))
+    with motor.begin() as con:
+        cfg.attributes["connection"] = con
+        command.upgrade(cfg, "head")
+
+
+class Armazenamento:
+    def __init__(self, pasta: Path, url: str | None = None):
+        self.blobs = Path(pasta) / "arquivos"
+        self.blobs.mkdir(parents=True, exist_ok=True)
+        self.motor, leitor = _motor(url or url_do_banco(pasta))
+        self.Sessao = sessionmaker(self.motor, expire_on_commit=False)
+        self.Leitura = sessionmaker(leitor)
+        migrar(self.motor)
+        self._semear()
+
+    def _semear(self) -> None:
+        """Banco novo (sem a linha de versão) recebe as escolas fictícias do seed."""
+        with self.Sessao.begin() as s:
+            if s.get(VersaoDB, 1) is not None:
+                return
+            s.add(VersaoDB(id=1, n=1))
+            for e in json.loads(SEED.read_text(encoding="utf-8")):
+                s.add(EscolaDB(rev=0, **_escola_campos(e)))
+
+    @contextmanager
+    def _escrita(self):
+        """Transação de gravação. O primeiro comando sobe a versão: isso trava a linha de
+        versão até o commit, então duas gravações nunca se intercalam (SQLite e PostgreSQL)."""
+        # ponytail: todas as escritas passam em fila por essa linha; ok para o volume do painel
+        with self.Sessao.begin() as s:
+            s.execute(update(VersaoDB).values(n=VersaoDB.n + 1))
+            yield s
 
     # ---------- leitura ----------
     def versao(self) -> int:
-        return self.d["versao"]
+        with self.Leitura() as s:
+            return s.scalar(select(VersaoDB.n))
 
     def tudo_json(self) -> str:
-        """Retrato completo já serializado dentro da trava (nada muda no meio)."""
-        with self.trava:
-            return json.dumps({k: self.d[k] for k in ("versao", "escolas", "meta", *COLECOES)},
-                              ensure_ascii=False, separators=(",", ":"))
+        """Retrato completo lido numa transação só (nada muda no meio)."""
+        with self.Leitura() as s:
+            versao = s.scalar(select(VersaoDB.n))
+            escolas = [_escola_dict(e) for e in s.scalars(select(EscolaDB).order_by(EscolaDB.id))]
+            meta = {m.ek: {**m.dados, "atualizadoEm": m.atualizado_em} for m in s.scalars(select(MetaDB))}
+            colecoes = {c: [] for c in COLECOES}
+            for r in s.scalars(select(RegistroDB).order_by(RegistroDB.seq.desc())):
+                colecoes[r.colecao].append(_registro_dict(r))
+        return json.dumps({"versao": versao, "escolas": escolas, "meta": meta, **colecoes},
+                          ensure_ascii=False, separators=(",", ":"))
 
     # ---------- escolas ----------
-    def criar_escola(self, dados: dict):
-        with self.trava:
-            dados = {**dados, "id": max((e["id"] for e in self.d["escolas"]), default=0) + 1, "rev": 0}
-            self.d["escolas"].append(dados)
-            self._gravar()
-            return dados
+    def criar_escola(self, dados: dict) -> dict:
+        with self._escrita() as s:
+            e = EscolaDB(rev=0, **_escola_campos(dados))
+            s.add(e)
+            s.flush()
+            return _escola_dict(e)
 
-    def atualizar_escola(self, id_: int, dados: dict):
-        with self.trava:
-            for i, e in enumerate(self.d["escolas"]):
-                if e["id"] == id_:
-                    # trava otimista: quem editou uma cópia antiga (rev menor) não apaga
-                    # a edição que outra pessoa gravou nesse meio tempo
-                    rev = e.get("rev", 0)
-                    if dados.get("rev", 0) != rev:
-                        raise Conflito
-                    self.d["escolas"][i] = {**dados, "id": id_, "rev": rev + 1}
-                    self._gravar()
-                    return self.d["escolas"][i]
-        return None
+    def atualizar_escola(self, id_: int, dados: dict) -> dict | None:
+        # trava otimista: o UPDATE só acontece se a revisão no banco ainda for a que o
+        # cliente leu. Se outra pessoa gravou nesse meio tempo, 0 linhas mudam → Conflito.
+        try:
+            with self._escrita() as s:
+                r = s.execute(
+                    update(EscolaDB)
+                    .where(EscolaDB.id == id_, EscolaDB.rev == dados.get("rev", 0))
+                    .values(**_escola_campos(dados), rev=EscolaDB.rev + 1)
+                    .execution_options(synchronize_session=False)
+                )
+                if r.rowcount == 0:
+                    raise Conflito if s.get(EscolaDB, id_) else LookupError
+                return _escola_dict(s.get(EscolaDB, id_))
+        except LookupError:
+            return None
 
-    def remover_escolas(self, ids: list[int]):
-        with self.trava:
-            antes = len(self.d["escolas"])
-            fora = set(ids)
-            self.d["escolas"] = [e for e in self.d["escolas"] if e["id"] not in fora]
-            self._gravar()
-            return antes - len(self.d["escolas"])
+    def remover_escolas(self, ids: list[int]) -> int:
+        with self._escrita() as s:
+            return s.execute(delete(EscolaDB).where(EscolaDB.id.in_(ids))).rowcount
 
     # ---------- coleções (links, arquivos, fotos, NTE, orçamentos, relatórios) ----------
-    def adicionar(self, col: str, dados: dict):
-        with self.trava:
-            dados = {**dados, "id": secrets.token_hex(8), "criadoEm": _agora()}
-            self.d[col].insert(0, dados)
-            self._gravar()
-            return dados
+    def adicionar(self, col: str, dados: dict) -> dict:
+        resto = {k: v for k, v in dados.items() if k not in ("id", "criadoEm")}
+        asset = resto.pop("asset") if isinstance(resto.get("asset"), str) else None
+        with self._escrita() as s:
+            r = RegistroDB(id=secrets.token_hex(8), colecao=col, criado_em=_agora(), asset=asset, dados=resto)
+            s.add(r)
+            s.flush()
+            return _registro_dict(r)
 
-    def atualizar(self, col: str, id_: str, patch: dict):
-        with self.trava:
-            for r in self.d[col]:
-                if r["id"] == id_:
-                    r.update({k: v for k, v in patch.items() if k not in ("id", "criadoEm", "asset")})
-                    self._gravar()
-                    return r
-        return None
+    def _registro(self, s, col: str, id_: str) -> RegistroDB | None:
+        return s.scalar(select(RegistroDB).where(RegistroDB.colecao == col, RegistroDB.id == id_))
 
-    def remover(self, col: str, id_: str):
-        with self.trava:
-            r = next((x for x in self.d[col] if x["id"] == id_), None)
-            if r is None:
-                return False
-            self.d[col].remove(r)
-            # o arquivo só sai quando nenhuma outra linha aponta para ele
-            a = r.get("asset")
-            if isinstance(a, str) and not any(x.get("asset") == a for c in COLECOES for x in self.d[c]):
-                self._apagar_blob(a)
-            self._gravar()
-            return True
+    def atualizar(self, col: str, id_: str, patch: dict) -> dict | None:
+        try:
+            with self._escrita() as s:
+                r = self._registro(s, col, id_)
+                if r is None:
+                    raise LookupError
+                r.dados = {**r.dados, **{k: v for k, v in patch.items() if k not in ("id", "criadoEm", "asset")}}
+                return _registro_dict(r)
+        except LookupError:
+            return None
 
-    def definir_meta(self, ek: str, dados: dict):
-        with self.trava:
-            self.d["meta"][ek] = {**dados, "atualizadoEm": _agora()}
-            self._gravar()
+    def remover(self, col: str, id_: str) -> bool:
+        apagar = None
+        try:
+            with self._escrita() as s:
+                r = self._registro(s, col, id_)
+                if r is None:
+                    raise LookupError
+                s.delete(r)
+                s.flush()
+                # o arquivo só sai quando nenhuma outra linha aponta para ele
+                if r.asset and not s.scalar(select(func.count()).where(RegistroDB.asset == r.asset)):
+                    s.execute(delete(BlobDB).where(BlobDB.id == r.asset))
+                    apagar = r.asset
+        except LookupError:
+            return False
+        if apagar:  # depois do commit: se a transação falhasse, o arquivo continuaria lá
+            (self.blobs / apagar).unlink(missing_ok=True)
+        return True
+
+    def definir_meta(self, ek: str, dados: dict) -> None:
+        with self._escrita() as s:
+            m = s.get(MetaDB, ek) or MetaDB(ek=ek)
+            m.dados, m.atualizado_em = dados, _agora()
+            s.add(m)
 
     # ---------- arquivos enviados ----------
     def salvar_blob(self, conteudo: bytes, tipo: str, limite: int) -> str:
         id_ = secrets.token_hex(16)
-        with self.trava:
-            if sum(x["tam"] for x in self.d["blobs"].values()) + len(conteudo) > limite:
-                raise CotaEsgotada
-            caminho = self.blobs / id_
-            caminho.write_bytes(conteudo)
-            try:
-                self.d["blobs"][id_] = {"tipo": tipo, "tam": len(conteudo)}
-                self._gravar()
-            except Exception:
-                self.d["blobs"].pop(id_, None)
-                caminho.unlink(missing_ok=True)
-                raise
+        caminho = self.blobs / id_
+        try:
+            with self._escrita() as s:
+                usado = s.scalar(select(func.coalesce(func.sum(BlobDB.tam), 0)))
+                if usado + len(conteudo) > limite:
+                    raise CotaEsgotada
+                caminho.write_bytes(conteudo)
+                s.add(BlobDB(id=id_, tipo=tipo, tam=len(conteudo)))
+        except BaseException:
+            caminho.unlink(missing_ok=True)
+            raise
         return id_
 
     def blob(self, id_: str):
-        with self.trava:
-            info = self.d["blobs"].get(id_)
-        return (self.blobs / id_, info["tipo"]) if info else (None, None)
-
-    def _apagar_blob(self, id_: str):
-        if self.d["blobs"].pop(id_, None):
-            (self.blobs / id_).unlink(missing_ok=True)
+        with self.Leitura() as s:
+            info = s.get(BlobDB, id_)
+        return (self.blobs / id_, info.tipo) if info else (None, None)
 
     def uso(self) -> dict:
-        with self.trava:
-            b = list(self.d["blobs"].values())
-        return {"files": len(b), "bytes": sum(x["tam"] for x in b)}
+        with self.Leitura() as s:
+            n, total = s.execute(select(func.count(), func.coalesce(func.sum(BlobDB.tam), 0))).one()
+        return {"files": n, "bytes": total}

@@ -17,7 +17,8 @@ Texto = texto(2000)
 Curto = texto(200)
 Data = texto(10, padrao=r"^(\d{4}-\d{2}-\d{2})?$")  # 'AAAA-MM-DD' ou vazio
 Url = texto(2000, padrao=r"^https?://\S+$")
-Ek = texto(16, padrao=r"^(\d{8}|id\d+)$")  # INEP da escola ou 'id' + id interno
+EK_PADRAO = r"^(\d{8}|id\d+)$"  # INEP da escola ou 'id' + id interno
+Ek = texto(16, padrao=EK_PADRAO)
 Asset = texto(32, padrao=r"^[0-9a-f]{32}$")  # id devolvido por POST /api/arquivos
 Contagem = Annotated[int, Field(ge=0)]
 ContagemOuVazio = Contagem | Literal[""]  # campo numérico deixado em branco no formulário

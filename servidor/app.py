@@ -4,6 +4,7 @@ Rodar:  uv run python -m servidor.app      (abre em http://127.0.0.1:8000)
 """
 import os
 from pathlib import Path
+from typing import Annotated
 
 from fastapi import Body, FastAPI, HTTPException, Path as Caminho, Request, Response
 from fastapi.middleware.gzip import GZipMiddleware
@@ -12,7 +13,7 @@ from fastapi.staticfiles import StaticFiles
 from starlette.concurrency import run_in_threadpool
 
 from servidor.armazenamento import COLECOES, Armazenamento, Conflito, CotaEsgotada
-from servidor.modelos import MODELOS, Ek, Escola, Meta
+from servidor.modelos import EK_PADRAO, MODELOS, Escola, Meta
 
 RAIZ = Path(__file__).resolve().parent.parent
 DADOS = Path(os.environ.get("PAINEL_DADOS", RAIZ / "dados"))
@@ -146,7 +147,7 @@ def remover(col: str, id_: str) -> Response:
 
 
 @app.put("/api/meta/{ek}", status_code=204)
-def definir_meta(dados: Meta, ek: Ek = Caminho()) -> Response:
+def definir_meta(ek: Annotated[str, Caminho(pattern=EK_PADRAO, max_length=16)], dados: Meta) -> Response:
     db.definir_meta(ek, dados.model_dump())
     return Response(status_code=204)
 

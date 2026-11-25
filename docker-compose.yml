@@ -1,0 +1,35 @@
+# Painel + PostgreSQL:  docker compose up --build   →  http://localhost:8000
+# Sem o compose, o app usa SQLite (dados/painel.db) e não precisa de banco à parte.
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: painel
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-painel}  # só para rodar localmente
+      POSTGRES_DB: painel
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U painel"]
+      interval: 3s
+      retries: 20
+
+  app:
+    build: .
+    environment:
+      PAINEL_DB_URL: postgresql+psycopg://painel:${POSTGRES_PASSWORD:-painel}@db:5432/painel
+    ports:
+      - "8000:8000"
+    volumes:
+      - arquivos:/app/dados  # arquivos enviados continuam em disco
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/versao')"]
+      interval: 3s
+      retries: 20
+
+volumes:
+  pgdata:
+  arquivos:
